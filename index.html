@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martin Guía – Náhled nového webu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000160-2b6492b64b/IMG_20250406_113340.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- NAVIGACE -->
+  <nav class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000055-d4123d4124/N%C3%A1vrh%20bez%20n%C3%A1zvou.png"
+             alt="Martin Guía" class="h-10 object-contain" />
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
+        <a href="#" class="hover:text-green-700 transition">Úvod</a>
+        <a href="#zajezdy" class="hover:text-green-700 transition">Zájezdy</a>
+        <a href="#destinace" class="hover:text-green-700 transition">Destinace</a>
+        <a href="#nemovitosti" class="hover:text-green-700 transition">Nemovitosti</a>
+        <a href="#o-nas" class="hover:text-green-700 transition">O nás</a>
+        <a href="#kontakt" class="bg-green-700 text-white px-4 py-2 rounded-full hover:bg-green-800 transition">Kontakt</a>
+      </div>
+      <div class="flex items-center gap-2 text-xs font-semibold">
+        <button class="px-2 py-1 bg-green-700 text-white rounded">CZ</button>
+        <button class="px-2 py-1 text-gray-500 hover:text-green-700 rounded transition">ES</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen flex items-center justify-center text-center text-white px-4">
+    <div class="max-w-3xl">
+      <p class="uppercase tracking-widest text-green-300 text-sm mb-4 font-semibold">Český průvodce ve Střední Americe</p>
+      <h1 class="font-display text-4xl md:text-6xl leading-tight mb-6">
+        Cestování po Kostarice,<br/>Panamě a Nikaragui
+      </h1>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">S respektem a úctou k přírodě i lidem. Itinerář přesně na míru.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#zajezdy" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full transition">
+          Prohlédnout zájezdy
+        </a>
+        <a href="#kontakt" class="border-2 border-white text-white hover:bg-white hover:text-gray-800 font-semibold px-8 py-3 rounded-full transition">
+          Napsat Martinovi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROČ S NÁMI -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-3xl md:text-4xl text-center mb-4">Proč s námi?</h2>
+      <p class="text-center text-gray-500 mb-12 max-w-xl mx-auto">Cestujte s průvodcem, který Střední Ameriku zná jako svůj druhý domov.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 card-hover shadow-sm">
+          <div class="w-2 h-8 bg-green-600 rounded mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Průvodce v češtině</h3>
+          <p class="text-gray-500 text-sm">Martin mluví česky a španělsky – žádná jazyková bariéra, vše srozumitelně.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-hover shadow-sm">
+          <div class="w-2 h-8 bg-green-600 rounded mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Program na míru</h3>
+          <p class="text-gray-500 text-sm">Tropické pralesy, sopky nebo karibské pláže – vše podle vašich přání.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-hover shadow-sm">
+          <div class="w-2 h-8 bg-green-600 rounded mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Respekt k přírodě</h3>
+          <p class="text-gray-500 text-sm">Cestujeme zodpovědně – s respektem k lidem i přírodě.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-hover shadow-sm">
+          <div class="w-2 h-8 bg-green-600 rounded mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Jistota při cestování</h3>
+          <p class="text-gray-500 text-sm">Martin je vždy s vaší skupinou – od příletu až po odlet.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-hover shadow-sm">
+          <div class="w-2 h-8 bg-green-600 rounded mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Dlouholeté zkušenosti</h3>
+          <p class="text-gray-500 text-sm">Léta v terénu, stovky spokojených cestovatelů.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-hover shadow-sm">
+          <div class="w-2 h-8 bg-green-600 rounded mb-4"></div>
+          <h3 class="font-bold text-lg mb-2">Stále objevujeme</h3>
+          <p class="text-gray-500 text-sm">Neustále hledáme nová místa a zážitky, které vás překvapí.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZÁJEZDY -->
+  <section id="zajezdy" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-3xl md:text-4xl text-center mb-4">Dobrodružné zájezdy</h2>
+      <p class="text-center text-gray-500 mb-12">Cesty pořádáme průběžně po celý rok.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-48 bg-cover bg-center" style="background-image:url('https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000579-0ed910ed94/IMG_20230419_155318-9.jpeg')"></div>
+          <div class="p-5">
+            <span class="text-xs font-semibold text-green-700 uppercase tracking-wide">Kostarika</span>
+            <h3 class="font-bold text-xl mt-1 mb-2">Kostarika 12 dní</h3>
+            <p class="text-gray-500 text-sm mb-4">Národní parky, sopky, karibské pláže a divoká příroda.</p>
+            <a href="#kontakt" class="text-green-700 font-semibold text-sm hover:underline">Více info →</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-48 bg-cover bg-center" style="background-image:url('https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000160-2b6492b64b/IMG_20250404_163135.jpeg')"></div>
+          <div class="p-5">
+            <span class="text-xs font-semibold text-green-700 uppercase tracking-wide">Panama</span>
+            <h3 class="font-bold text-xl mt-1 mb-2">Panama 12–16 dní</h3>
+            <p class="text-gray-500 text-sm mb-4">Průplav, ostrovy, pralesy a kultura.</p>
+            <a href="#kontakt" class="text-green-700 font-semibold text-sm hover:underline">Více info →</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-48 bg-cover bg-center bg-gray-200" style="background-image:url('https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000136-d6e2fd6e31/Granada%20nikara.png')"></div>
+          <div class="p-5">
+            <span class="text-xs font-semibold text-green-700 uppercase tracking-wide">Nikaragua</span>
+            <h3 class="font-bold text-xl mt-1 mb-2">Nikaragua 12–15 dní</h3>
+            <p class="text-gray-500 text-sm mb-4">Koloniální města, jezera a aktivní sopky.</p>
+            <a href="#kontakt" class="text-green-700 font-semibold text-sm hover:underline">Více info →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCE -->
+  <section class="py-20 bg-green-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="font-display text-3xl md:text-4xl text-center mb-12">Co říkají cestovatelé</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <p class="text-gray-600 text-sm italic mb-4">"Martin nám připravil trasu přesně na míru dle našich preferencí. Perfektní!"</p>
+          <p class="font-semibold text-sm">Jaroslav Lasoň</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <p class="text-gray-600 text-sm italic mb-4">"Skvělý člověk, skvělé zážitky. Doporučuji všem, kdo chtějí poznat Kostariku jinak."</p>
+          <p class="font-semibold text-sm">Marťas Bušek</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <p class="text-gray-600 text-sm italic mb-4">"PURA VIDA! Cestování bez komerce, autentické zážitky. Vrátím se určitě."</p>
+          <p class="font-semibold text-sm">Lukáš Hegner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEMOVITOSTI -->
+  <section id="nemovitosti" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-3xl md:text-4xl text-center mb-4">Kus ráje v Kostarice</h2>
+      <p class="text-center text-gray-500 mb-12">Pronájem i prodej nemovitostí přímo v Kostarice.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-36 bg-cover bg-center" style="background-image:url('https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000579-0ed910ed94/2-8.png')"></div>
+          <div class="p-4">
+            <span class="text-xs text-green-700 font-semibold uppercase">Pronájem</span>
+            <h4 class="font-bold mt-1">Kabinas Luna</h4>
+            <p class="text-xs text-gray-500">Puerto Viejo</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-36 bg-cover bg-center" style="background-image:url('https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000355-4639f463a1/2.png')"></div>
+          <div class="p-4">
+            <span class="text-xs text-green-700 font-semibold uppercase">Pronájem</span>
+            <h4 class="font-bold mt-1">Dům Sucre</h4>
+            <p class="text-xs text-gray-500">Kostarika</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-36 bg-gray-100 flex items-center justify-center">
+            <span class="text-gray-400 text-xs uppercase tracking-wide">foto brzy</span>
+          </div>
+          <div class="p-4">
+            <span class="text-xs text-green-700 font-semibold uppercase">Pronájem</span>
+            <h4 class="font-bold mt-1">Casa Tucán</h4>
+            <p class="text-xs text-gray-500">Turrialba</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden card-hover shadow-sm border border-gray-100">
+          <div class="h-36 bg-gray-100 flex items-center justify-center">
+            <span class="text-gray-400 text-xs uppercase tracking-wide">foto brzy</span>
+          </div>
+          <div class="p-4">
+            <span class="text-xs text-amber-600 font-semibold uppercase">Prodej</span>
+            <h4 class="font-bold mt-1">Pozemek</h4>
+            <p class="text-xs text-gray-500">Santa Cruz de Turrialba</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-3xl md:text-4xl text-center mb-12">Zprávy z Kostariky</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-sm">
+          <div class="h-44 bg-green-200"></div>
+          <div class="p-5">
+            <p class="text-xs text-gray-400 mb-1">10. 6. 2025</p>
+            <h3 class="font-bold mb-2">Karibik vs. Pacifik – pláže</h3>
+            <p class="text-gray-500 text-sm">Která strana Kostariky vás uchvátí víc? Srovnání dvou světů.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-sm">
+          <div class="h-44 bg-emerald-100"></div>
+          <div class="p-5">
+            <p class="text-xs text-gray-400 mb-1">27. 5. 2025</p>
+            <h3 class="font-bold mb-2">Národní parky Kostariky</h3>
+            <p class="text-gray-500 text-sm">Průvodce nejkrásnějšími parky, které nesmíte vynechat.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-sm">
+          <div class="h-44 bg-teal-100"></div>
+          <div class="p-5">
+            <p class="text-xs text-gray-400 mb-1">26. 5. 2025</p>
+            <h3 class="font-bold mb-2">Kladení vajec želv v Tortuguero</h3>
+            <p class="text-gray-500 text-sm">Noční zázrak Kostariky – nezapomenutelný zážitek.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="py-20 bg-green-800 text-white">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="font-display text-3xl md:text-4xl mb-4">Vaše cesta začíná zde</h2>
+      <p class="text-green-200 mb-8">Napište nám, rádi připravíme cestu přesně podle vašich přání.</p>
+      <div class="bg-white rounded-2xl p-8 text-gray-800 text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="text-xs font-semibold text-gray-500 uppercase">Jméno</label>
+            <input type="text" placeholder="Vaše jméno" class="w-full mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" />
+          </div>
+          <div>
+            <label class="text-xs font-semibold text-gray-500 uppercase">Email</label>
+            <input type="email" placeholder="vas@email.cz" class="w-full mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="text-xs font-semibold text-gray-500 uppercase">Zpráva</label>
+          <textarea rows="4" placeholder="O jaký zájezd máte zájem? Kdy cestujete, kolik vás bude..." class="w-full mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"></textarea>
+        </div>
+        <button class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 rounded-lg transition">
+          Odeslat zprávu
+        </button>
+      </div>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center text-green-200 text-sm">
+        <a href="tel:+50686755419" class="hover:text-white transition">+506 8675 5419</a>
+        <a href="mailto:info@martinguia.cz" class="hover:text-white transition">info@martinguia.cz</a>
+      </div>
+      <div class="mt-6 flex justify-center gap-4">
+        <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" class="text-green-300 hover:text-white transition text-sm">Facebook</a>
+        <a href="https://www.instagram.com/martin_guia_/" class="text-green-300 hover:text-white transition text-sm">Instagram</a>
+        <a href="https://www.tiktok.com/@martin_guia" class="text-green-300 hover:text-white transition text-sm">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-green-900 text-green-300 text-center py-6 text-xs">
+    <p>© 2025 Martin Guía · <a href="mailto:info@martinguia.cz" class="hover:text-white">info@martinguia.cz</a></p>
+  </footer>
+
+</body>
+</html>
