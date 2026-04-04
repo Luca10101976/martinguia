@@ -83,7 +83,7 @@
           <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </button>
         <!-- Counter -->
-        <div class="absolute bottom-3 right-4 bg-black/50 text-white text-xs px-2 py-1 rounded-full" id="gallery-counter">1 / 5</div>
+        <div class="absolute bottom-3 right-4 bg-black/50 text-white text-xs px-2 py-1 rounded-full" id="gallery-counter">1 / 4</div>
         <!-- Dots -->
         <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" id="gallery-dots"></div>
       </div>
@@ -91,14 +91,13 @@
       <div class="flex gap-2 mt-3 overflow-x-auto pb-1">
         <img src="casa-tucan-1.webp" onclick="goToSlide(0)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer transition flex-shrink-0 ring-2 ring-green-600" alt="" />
         <img src="casa-tucan-2.webp" onclick="goToSlide(1)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
-        <img src="casa-tucan-3.webp" onclick="goToSlide(2)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
-        <img src="casa-tucan-4.webp" onclick="goToSlide(3)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
-        <img src="casa-tucan-5.webp" onclick="goToSlide(4)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
+        <img src="casa-tucan-4.webp" onclick="goToSlide(2)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
+        <img src="casa-tucan-5.webp" onclick="goToSlide(3)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
       </div>
     </div>
   </section>
   <script>
-    const imgs = ['casa-tucan-1.webp','casa-tucan-2.webp','casa-tucan-3.webp','casa-tucan-4.webp','casa-tucan-5.webp'];
+    const imgs = ['casa-tucan-1.webp','casa-tucan-2.webp','casa-tucan-4.webp','casa-tucan-5.webp'];
     let current = 0;
     const mainImg = document.getElementById('gallery-main');
     const counter = document.getElementById('gallery-counter');
