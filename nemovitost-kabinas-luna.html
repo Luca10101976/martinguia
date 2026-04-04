@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nemovitosti v Kostarice – Martin Guía</title>
+  <title>Puerto Viejo – Kabinas Luna – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,10 +11,12 @@
   <style>
     body { font-family: 'Open Sans', sans-serif; }
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
     .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.8; color: #374151; }
+    .prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; color: #14532d; }
+    .prose ul { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+    .prose li { margin-bottom: 0.5rem; color: #374151; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -68,77 +70,54 @@
   </nav>
   <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
 
-  <!-- HEADER -->
-  <section class="py-16 bg-green-50 text-center">
-    <div class="max-w-3xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">Kus ráje v Kostarice</h1>
-      <p class="text-lg text-gray-600">Pronájem i prodej nemovitostí přímo v Kostarice. Pomůžeme vám od výběru až po podpis.</p>
+  <section class="h-72 bg-green-900 flex items-center justify-center relative">
+    <div class="text-center text-white px-4">
+      <p class="text-xs uppercase tracking-widest text-green-300 mb-2">Pronájem · Puerto Viejo</p>
+      <h1 class="text-4xl md:text-5xl">Kabinas Luna</h1>
     </div>
   </section>
 
-  <!-- PRONAJEM -->
   <section class="py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl text-green-800 mb-8">Pronájem – krátkodobý i dlouhodobý</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-xs text-gray-400 uppercase tracking-wide mb-8">
+        <a href="nemovitosti.html" class="hover:text-green-700">Nemovitosti</a>
+        <span class="mx-2">·</span> Pronájem
+        <span class="mx-2">·</span> Puerto Viejo
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
-          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000625-7bfe97bfeb/7-4.png" alt="Casa Tucán" class="w-full h-44 object-cover" />
-          <div class="p-5">
-            <span class="text-xs text-green-700 font-semibold uppercase tracking-wide">Pronájem</span>
-            <h3 class="text-lg mt-1 mb-1">Casa Tucán</h3>
-            <p class="text-xs text-gray-500 mb-4">Turrialba, Kostarika</p>
-            <a href="nemovitost-casa-tucan.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
-          </div>
+        <div class="lg:col-span-2 prose">
+          <p>Kabinas Luna se nacházejí v srdci karibského Puerto Viejo – jednoho z nejoblíbenějších míst Kostariky pro cestovatele hledající autentickou karibskou atmosféru. Reggae, kokosové palmy, průzračné moře – to vše máte doslova za rohem.</p>
+          <h3>Co nabízejí Kabinas Luna</h3>
+          <p>K dispozici jsou 3 samostatné pokoje, každý pro maximálně 3 osoby. Každý pokoj má vlastní soukromou koupelnu, lednici, televizi, ventilátor a přístup k internetu. Celý areál je oplocený s parkováním přímo u ubytování.</p>
+          <ul>
+            <li>3 pokoje, každý až pro 3 osoby</li>
+            <li>Soukromá koupelna u každého pokoje</li>
+            <li>Lednice, TV, ventilátor, WiFi</li>
+            <li>Společná venkovní kuchyně</li>
+            <li>Oplocený pozemek, soukromé parkování</li>
+            <li>10 minut pěšky na pláž a centrum Puerto Viejo</li>
+          </ul>
+          <h3>Lokalita</h3>
+          <p>Puerto Viejo de Talamanca leží na karibském pobřeží Kostariky. Je to živá bohémská vesnička s afrokaribskou kulturou, kreolskou kuchyní a výjimečnými plážemi jako Punta Uva nebo Playa Cocles. Ideální základna pro výlety do přírody i relaxaci u moře.</p>
         </div>
 
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
-          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000355-4639f463a1/2.png" alt="Dům Sucre" class="w-full h-44 object-cover" />
-          <div class="p-5">
-            <span class="text-xs text-green-700 font-semibold uppercase tracking-wide">Pronájem</span>
-            <h3 class="text-lg mt-1 mb-1">Dům Sucre</h3>
-            <p class="text-xs text-gray-500 mb-4">San Carlos, Kostarika</p>
-            <a href="nemovitost-sucre.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
-          </div>
-        </div>
-
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
-          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000579-0ed910ed94/2-8.png" alt="Kabinas Luna" class="w-full h-44 object-cover" />
-          <div class="p-5">
-            <span class="text-xs text-green-700 font-semibold uppercase tracking-wide">Pronájem</span>
-            <h3 class="text-lg mt-1 mb-1">Kabinas Luna</h3>
-            <p class="text-xs text-gray-500 mb-4">Puerto Viejo, Kostarika</p>
-            <a href="nemovitost-kabinas-luna.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
-          </div>
-        </div>
-
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
-          <div class="w-full h-44 bg-gray-100 flex items-center justify-center text-gray-400 text-sm">Foto brzy</div>
-          <div class="p-5">
-            <span class="text-xs text-green-700 font-semibold uppercase tracking-wide">Pronájem</span>
-            <h3 class="text-lg mt-1 mb-1">Real Cabecar</h3>
-            <p class="text-xs text-gray-500 mb-4">Grano de Oro, Kostarika</p>
-            <a href="kontakt.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODEJ -->
-  <section class="py-14 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl text-green-800 mb-8">Prodej nemovitostí</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover bg-white">
-          <div class="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-400 text-sm">Foto brzy</div>
-          <div class="p-5">
-            <span class="text-xs text-amber-600 font-semibold uppercase tracking-wide">Prodej</span>
-            <h3 class="text-lg mt-1 mb-1">Tři chaty v srdci džungle</h3>
-            <p class="text-xs text-gray-500 mb-4">Puerto Viejo, Kostarika</p>
-            <a href="nemovitost-luxusni-chaty.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
+        <div class="lg:col-span-1">
+          <div class="bg-green-50 rounded-2xl p-6 sticky top-24">
+            <span class="text-xs font-semibold text-green-700 uppercase tracking-wide">Krátkodobý pronájem</span>
+            <p class="text-3xl font-bold text-green-800 mt-2 mb-1">$24 <span class="text-base font-normal">USD / osoba / noc</span></p>
+            <p class="text-sm text-gray-500 mb-6">Místní sazba: 10 000 CRC / osoba / noc</p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li class="flex gap-2"><span class="text-green-600 font-bold">✓</span> 3 pokoje, max. 3 osoby každý</li>
+              <li class="flex gap-2"><span class="text-green-600 font-bold">✓</span> Soukromé koupelny</li>
+              <li class="flex gap-2"><span class="text-green-600 font-bold">✓</span> Internet, TV, lednice</li>
+              <li class="flex gap-2"><span class="text-green-600 font-bold">✓</span> Venkovní kuchyně</li>
+              <li class="flex gap-2"><span class="text-green-600 font-bold">✓</span> Parkování v areálu</li>
+              <li class="flex gap-2"><span class="text-green-600 font-bold">✓</span> 10 min pěšky na pláž</li>
+            </ul>
+            <a href="kontakt.html" class="block w-full bg-green-700 text-white text-center font-semibold py-3 rounded-full hover:bg-green-800 transition-colors mb-3">Napsat Martinovi</a>
+            <p class="text-xs text-gray-500 text-center">Martin: <a href="tel:+50686755419" class="hover:text-green-700">+506 8675 5419</a></p>
+            <p class="text-xs text-gray-500 text-center mt-1">Evelyn: <a href="tel:+50672650981" class="hover:text-green-700">+506 7265 0981</a></p>
           </div>
         </div>
 
@@ -146,41 +125,10 @@
     </div>
   </section>
 
-  <!-- PRODEJ POZEMKU -->
-  <section class="py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl text-green-800 mb-8">Prodej pozemků</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
-          <div class="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-400 text-sm">Foto brzy</div>
-          <div class="p-5">
-            <span class="text-xs text-amber-600 font-semibold uppercase tracking-wide">Prodej pozemku</span>
-            <h3 class="text-lg mt-1 mb-1">Pozemek – Turrialba</h3>
-            <p class="text-xs text-gray-500 mb-4">Turrialba, Kostarika</p>
-            <a href="kontakt.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
-          </div>
-        </div>
-
-        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
-          <div class="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-400 text-sm">Foto brzy</div>
-          <div class="p-5">
-            <span class="text-xs text-amber-600 font-semibold uppercase tracking-wide">Prodej pozemku</span>
-            <h3 class="text-lg mt-1 mb-1">Pozemek s tropickou džunglí</h3>
-            <p class="text-xs text-gray-500 mb-4">Santa Cruz de Turrialba, Kostarika</p>
-            <a href="nemovitost-pozemek-turrialba.html" class="text-sm font-semibold text-green-700 hover:underline">Více informací →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <section class="py-14 bg-green-800 text-white text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h2 class="text-3xl mb-4">Zájem o nemovitost v Kostarice?</h2>
-      <p class="text-green-200 mb-8">Pomůžeme vám s výběrem, prohlídkou i právním zajištěním. V týmu máme advokáty přímo v Kostarice.</p>
+      <h2 class="text-3xl mb-4">Zájem o Kabinas Luna?</h2>
+      <p class="text-green-200 mb-8">Napište nám a rádi vám potvrdíme dostupnost a připravíme pobyt přesně podle vašich přání.</p>
       <a href="kontakt.html" class="inline-block bg-white text-green-800 font-semibold px-8 py-3 rounded-full hover:bg-green-50 transition-colors">Napsat Martinovi</a>
     </div>
   </section>
