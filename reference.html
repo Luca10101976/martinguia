@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reference – Martin Guía</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
+    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <nav class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000055-d4123d4124/N%C3%A1vrh%20bez%20n%C3%A1zvou.png" alt="Martin Guia logo" class="h-10 w-auto" />
+        </a>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-700">
+          <a href="index.html" class="hover:text-green-700 transition-colors">Úvod</a>
+          <a href="zajezdy.html" class="hover:text-green-700 transition-colors">Zájezdy</a>
+          <div class="nav-dropdown-wrapper relative">
+            <button class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown py-1">
+              <a href="kostarika.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Kostarika</a>
+              <a href="panama.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Panama</a>
+              <a href="nikaragua.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Nikaragua</a>
+            </div>
+          </div>
+          <a href="nemovitosti.html" class="hover:text-green-700 transition-colors">Nemovitosti</a>
+          <div class="nav-dropdown-wrapper relative">
+            <button class="text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown py-1">
+              <a href="tym.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Náš tým</a>
+              <a href="reference.html" class="block px-4 py-2 text-green-700 bg-green-50">Reference</a>
+            </div>
+          </div>
+          <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1 cursor-pointer select-none">
+            <span class="font-semibold text-green-700">CZ</span><span>/</span><span>ES</span>
+          </div>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-1 text-sm font-semibold text-gray-700 border-t border-gray-100 pt-3">
+        <a href="index.html" class="block py-2 hover:text-green-700">Úvod</a>
+        <a href="zajezdy.html" class="block py-2 hover:text-green-700">Zájezdy</a>
+        <a href="kostarika.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Kostarika</a>
+        <a href="panama.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Panama</a>
+        <a href="nikaragua.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Nikaragua</a>
+        <a href="nemovitosti.html" class="block py-2 hover:text-green-700">Nemovitosti</a>
+        <a href="tym.html" class="block py-2 hover:text-green-700">Náš tým</a>
+        <a href="reference.html" class="block py-2 hover:text-green-700">Reference</a>
+        <a href="kontakt.html" class="inline-block mt-2 bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
+
+  <section class="py-16 bg-green-50 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">Co říkají cestovatelé</h1>
+      <p class="text-lg text-gray-600">Skutečné zkušenosti lidí, kteří cestovali s Martinem</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Šest společných nezapomenutelných dní po Kostarice od Turrialba, přes NP Tortugiero po NP Cahuita spolu s Martin Fredy Burda. Skvělý průvodce!"</p>
+          <p class="font-semibold text-green-800">Lukáš Hegner</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Jízda plná skvělých zážitků zorganizovaná od přistání až po odlet z Kostariky. Milý chlápek, srdečně doporučuji."</p>
+          <p class="font-semibold text-green-800">Ivo Karkoška</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Don Martín Burda es una excelente persona, trabajadora, honesta y de gran responsabilidad moral."</p>
+          <p class="font-semibold text-green-800">Oscar Ugalde</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Náš sen je zase o kousek blíže realitě – koupili jsme pozemek na Kostarice. Martin pomohl s výběrem, nákupem i právní asistencí. Bez něj bychom to nezvládli."</p>
+          <p class="font-semibold text-green-800">Lucie Hormandlová Stajskova</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Martin nám pomohl založit místní telefonní číslo, zajistil letenky, ubytování, dopravu a veškeré informace, které jsme potřebovali. Servis na nejvyšší úrovni."</p>
+          <p class="font-semibold text-green-800">Lucie Hormandlová Stajskova</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Prostě Pura vida – zážitek s šamanem, vodopádem, národním parkem. Nezapomenutelné!"</p>
+          <p class="font-semibold text-green-800">Romana Kubíčková</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Symbioza těchto dvou lidí – rodilé costaričanky a českého manžela – je zárukou autentického zážitku, na který jen tak nezapomenete."</p>
+          <p class="font-semibold text-green-800">Pavloušek Tomáš</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <p class="text-gray-600 italic text-base mb-5 leading-relaxed">"Těch pár korun, které takovým lidem jako Martin dáte za služby, se vrátí. Upřímně doporučuji každému, kdo chce poznat Kostariku jinak než z letákového katalogu."</p>
+          <p class="font-semibold text-green-800">Miroslav Liška</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-green-800 text-white text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-3xl mb-4">Přidejte se k nim</h2>
+      <p class="text-green-200 mb-8">Napište nám a připravíme cestu přesně pro vás.</p>
+      <a href="kontakt.html" class="inline-block bg-white text-green-800 font-semibold px-8 py-3 rounded-full hover:bg-green-50 transition-colors">Napsat Martinovi</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex gap-6 text-sm">
+          <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
+          <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.tiktok.com/@martin_guia" target="_blank" rel="noopener" class="hover:text-white transition-colors">TikTok</a>
+        </div>
+        <div class="text-sm text-center">
+          <span class="text-gray-500">© 2025 Martin Guía</span>
+          <span class="mx-2">·</span>
+          <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
+          <span class="mx-2">·</span>
+          <a href="tel:+50686755419" class="hover:text-white transition-colors">+506 8675 5419</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
