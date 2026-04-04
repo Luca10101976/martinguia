@@ -74,12 +74,12 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Main slide -->
       <div class="relative rounded-2xl overflow-hidden shadow-md bg-black" style="aspect-ratio:16/9;">
-        <div id="gallery-slides" class="flex transition-transform duration-500 ease-in-out h-full">
-          <img src="casa-tucan-1.webp" class="w-full h-full object-cover flex-shrink-0" alt="Casa Tucán 1" />
-          <img src="casa-tucan-2.webp" class="w-full h-full object-cover flex-shrink-0" alt="Casa Tucán 2" />
-          <img src="casa-tucan-3.webp" class="w-full h-full object-cover flex-shrink-0" alt="Casa Tucán 3" />
-          <img src="casa-tucan-4.webp" class="w-full h-full object-cover flex-shrink-0" alt="Casa Tucán 4" />
-          <img src="casa-tucan-5.webp" class="w-full h-full object-cover flex-shrink-0" alt="Casa Tucán 5" />
+        <div id="gallery-slides" class="flex transition-transform duration-500 ease-in-out" style="height:100%; width:500%;">
+          <img src="casa-tucan-1.webp" class="object-cover flex-shrink-0" style="width:20%; height:100%;" alt="Casa Tucán 1" />
+          <img src="casa-tucan-2.webp" class="object-cover flex-shrink-0" style="width:20%; height:100%;" alt="Casa Tucán 2" />
+          <img src="casa-tucan-3.webp" class="object-cover flex-shrink-0" style="width:20%; height:100%;" alt="Casa Tucán 3" />
+          <img src="casa-tucan-4.webp" class="object-cover flex-shrink-0" style="width:20%; height:100%;" alt="Casa Tucán 4" />
+          <img src="casa-tucan-5.webp" class="object-cover flex-shrink-0" style="width:20%; height:100%;" alt="Casa Tucán 5" />
         </div>
         <!-- Arrows -->
         <button onclick="slideGallery(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow transition">
@@ -118,7 +118,7 @@
 
     function goToSlide(n) {
       current = n;
-      slides.style.transform = 'translateX(-' + (100 * current) + '%)';
+      slides.style.transform = 'translateX(-' + (20 * current) + '%)';
       thumbs.forEach((t, i) => {
         t.classList.toggle('opacity-100', i === current);
         t.classList.toggle('opacity-60', i !== current);
