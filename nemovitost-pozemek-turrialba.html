@@ -70,12 +70,61 @@
   </nav>
   <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
 
-  <section class="h-72 bg-green-900 flex items-center justify-center">
-    <div class="text-center text-white px-4">
-      <p class="text-xs uppercase tracking-widest text-green-300 mb-2">Prodej pozemku · Santa Cruz de Turrialba</p>
-      <h1 class="text-4xl md:text-5xl">Pozemek s výhledem na sopku</h1>
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Gallery -->
+      <div class="relative rounded-2xl overflow-hidden shadow-md bg-black">
+        <img id="gallery-main" src="pozemek-turrialba-1.webp" alt="Pozemek Santa Cruz de Turrialba" class="w-full block" style="max-height:520px; object-fit:contain; background:#000;" />
+        <button onclick="slideGallery(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow transition">
+          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button onclick="slideGallery(1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow transition">
+          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <div class="absolute bottom-3 right-4 bg-black/50 text-white text-xs px-2 py-1 rounded-full" id="gallery-counter">1 / 2</div>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" id="gallery-dots"></div>
+      </div>
+      <div class="flex gap-2 mt-3 overflow-x-auto pb-1">
+        <img src="pozemek-turrialba-1.webp" onclick="goToSlide(0)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer transition flex-shrink-0 ring-2 ring-green-600" alt="" />
+        <img src="pozemek-turrialba-2.webp" onclick="goToSlide(1)" class="gallery-thumb rounded-lg h-16 w-24 object-cover cursor-pointer opacity-50 hover:opacity-100 transition flex-shrink-0" alt="" />
+      </div>
+      <!-- YouTube video -->
+      <div class="mt-4 rounded-2xl overflow-hidden shadow-md" style="aspect-ratio:16/9;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wPayEuo6yks" title="Pozemek Santa Cruz de Turrialba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
+  <script>
+    const imgs = ['pozemek-turrialba-1.webp','pozemek-turrialba-2.webp'];
+    let current = 0;
+    const mainImg = document.getElementById('gallery-main');
+    const counter = document.getElementById('gallery-counter');
+    const thumbs = document.querySelectorAll('.gallery-thumb');
+    const dotsContainer = document.getElementById('gallery-dots');
+    for (let i = 0; i < imgs.length; i++) {
+      const d = document.createElement('button');
+      d.className = 'w-2 h-2 rounded-full transition ' + (i === 0 ? 'bg-white' : 'bg-white/40');
+      d.onclick = () => goToSlide(i);
+      dotsContainer.appendChild(d);
+    }
+    mainImg.style.transition = 'opacity 0.15s ease';
+    function goToSlide(n) {
+      current = n;
+      mainImg.style.opacity = '0';
+      setTimeout(() => { mainImg.src = imgs[current]; mainImg.style.opacity = '1'; }, 150);
+      counter.textContent = (current + 1) + ' / ' + imgs.length;
+      thumbs.forEach((t, i) => {
+        t.classList.toggle('opacity-50', i !== current);
+        t.classList.toggle('ring-2', i === current);
+        t.classList.toggle('ring-green-600', i === current);
+      });
+      dotsContainer.querySelectorAll('button').forEach((d, i) => {
+        d.className = 'w-2 h-2 rounded-full transition ' + (i === current ? 'bg-white' : 'bg-white/40');
+      });
+    }
+    function slideGallery(dir) { goToSlide((current + dir + imgs.length) % imgs.length); }
+    setInterval(() => slideGallery(1), 5000);
+  </script>
 
   <section class="py-14">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
