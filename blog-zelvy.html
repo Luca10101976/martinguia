@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kladení vajec želv v Tortugueru – Martin Guía</title>
+  <meta name="description" content="Noční zázrak Kostariky – sledování kladení vajec mořských želv v Tortugueru. Kdy jet a jak si výlet zorganizovat." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.martinguia.cz/blog-zelvy.html" />
+  <link rel="alternate" hreflang="cs-CZ" href="https://www.martinguia.cz/blog-zelvy.html" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.martinguia.cz/blog-zelvy-es.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.martinguia.cz/blog-zelvy.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Kladení vajec mořských želv v Tortugueru – Martin Guía" />
+  <meta property="og:description" content="Noční zázrak Kostariky – sledování kladení vajec mořských želv v Tortugueru. Kdy jet a jak si výlet zorganizovat." />
+  <meta property="og:url" content="https://www.martinguia.cz/blog-zelvy.html" />
+  <meta property="og:image" content="https://www.martinguia.cz/logo.png" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Martin Guía" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kladení vajec mořských želv v Tortugueru – Martin Guía" />
+  <meta name="twitter:description" content="Noční zázrak Kostariky – sledování kladení vajec mořských želv v Tortugueru. Kdy jet a jak si výlet zorganizovat." />
+  <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
+  <title>Kladení vajec mořských želv v Tortugueru – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,11 +32,24 @@
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
     .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
     .prose p { margin-bottom: 1.25rem; line-height: 1.8; color: #374151; }
     .prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; color: #14532d; }
     .prose ul { padding-left: 1.5rem; margin-bottom: 1.25rem; }
     .prose li { margin-bottom: 0.5rem; color: #374151; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Kladení vajec mořských želv v Tortugueru",
+    "description": "Noční zázrak Kostariky – sledování kladení vajec mořských želv v Tortugueru. Kdy jet a jak si výlet zorganizovat.",
+    "url": "https://www.martinguia.cz/blog-zelvy.html",
+    "datePublished": "2025-05-26",
+    "author": {"@type": "Person", "name": "Martin Guía"},
+    "publisher": {"@type": "Organization", "name": "Martin Guía", "logo": {"@type": "ImageObject", "url": "https://www.martinguia.cz/logo.png"}}
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -39,19 +71,20 @@
             </div>
           </div>
           <a href="nemovitosti.html" class="hover:text-green-700 transition-colors">Nemovitosti</a>
+          <a href="blog.html" class="text-green-700 transition-colors">Blog</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="tym.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Náš tým</a>
               <a href="reference.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Reference</a>
             </div>
           </div>
           <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
-          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1 cursor-pointer select-none">
-            <span class="font-semibold text-green-700">CZ</span><span>/</span><span>ES</span>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1">
+            <a data-lang-switch="cz" href="blog-zelvy.html" class="hover:text-green-700 transition-colors">CZ</a><span>/</span><a data-lang-switch="es" href="blog-zelvy-es.html" class="hover:text-green-700 transition-colors">ES</a>
           </div>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
+        <button id="mobile-menu-btn" type="button" aria-label="Otevřít hlavní menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
@@ -62,52 +95,59 @@
         <a href="panama.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Panama</a>
         <a href="nikaragua.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Nikaragua</a>
         <a href="nemovitosti.html" class="block py-2 hover:text-green-700">Nemovitosti</a>
+        <a href="blog.html" class="block py-2 hover:text-green-700">Blog</a>
         <a href="tym.html" class="block py-2 hover:text-green-700">Náš tým</a>
         <a href="reference.html" class="block py-2 hover:text-green-700">Reference</a>
         <a href="kontakt.html" class="inline-block mt-2 bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800">Kontakt</a>
       </div>
     </div>
   </nav>
-  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
-
-  <section class="relative h-72 overflow-hidden">
-    <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000335-7246f72470/481083200_659977296416133_6150539173394769560_n.jpeg" alt="Mořské želvy Tortuguero" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/40"></div>
-  </section>
+  <script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+    });
+  }
+</script>
 
   <article class="py-14">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-xs text-gray-400 uppercase tracking-wide mb-3"><a href="kostarika.html" class="hover:text-green-700">Kostarika</a> · 26. 5. 2025</p>
       <h1 class="text-3xl md:text-4xl text-green-800 mb-8">Noční zázrak Kostariky – Kladení vajec mořských želv v Tortugueru</h1>
 
+      <div class="mb-8 rounded-2xl overflow-hidden bg-gray-900 h-72 flex items-center justify-center relative">
+        <!-- Sem ulož foto: zelvy-1.jpg -->
+        <img src="zelvy-1.jpg" alt="Mořská želva kladoucí vejce v Tortugueru" class="w-full h-72 object-cover" onerror="this.style.display='none'" />
+        <span class="text-6xl absolute">🐢</span>
+      </div>
+
       <div class="prose">
-        <p>Je půlnoc. Stojíte na tmavé pláži bez světel, bez hluku, bez telefonů. A pak – z moře vychází obrovská stínová silueta. Mořská želva, která váží přes 150 kilogramů, se pomalu plazí na písek. Zažijete ticho, jaké jste nikdy nezažili. Tohle je Tortuguero.</p>
+        <p>V jednom z nejdivočejších koutů karibské Kostariky, kde se džungle potkává s mořem a člověk ztiší dech, se každoročně odehrává přírodní rituál starý tisíce let. V národním parku Tortuguero se od <strong>června do října</strong> vracejí mořské želvy, aby na písku nakládly svá vejce.</p>
 
         <h3>Proč právě Tortuguero?</h3>
-        <p>Tortuguero na severovýchodním pobřeží Kostariky je jedním z nejvýznamnějších hnízdišť mořských želv na světě. Každý rok se sem vrací tisíce samic, aby nakládly vejce do stejného písku, kde se samy vylíhly. Je to instinkt starý miliony let.</p>
+        <p>Tortuguero znamená „místo želv" – a není to náhoda. Toto místo na severovýchodním pobřeží Kostariky je jedním z nejvýznamnějších hnízdišť mořských želv na světě. Každý rok sem připlývají <strong>želvy zelenavé (Chelonia mydas)</strong>, aby tu kladly vejce. Mimo sezónu se tu vyskytují i další druhy: karety, želvy kožatky nebo karety pravé.</p>
 
-        <h3>Kdy jet?</h3>
-        <ul>
-          <li><strong>Červen – říjen:</strong> hlavní sezóna kladení vajec</li>
-          <li><strong>Září – listopad:</strong> líhnutí mláďat</li>
-          <li>Dominantní druh: želva zelenavá (Chelonia mydas)</li>
-          <li>Mimo sezónu: karety a další druhy</li>
-        </ul>
+        <h3>Jak to probíhá?</h3>
+        <p>Večer, kdy už je pláž prázdná a hvězdy začínají svítit, připlývají z moře první samice. Každá z nich váží i přes 150 kilo. A přesto se s neuvěřitelnou něhou vydává po písku nahoru, hledat správné místo.</p>
+        <p>Když ho najde, začíná kopat. Zadními ploutvemi vytvoří hnízdo. Poté – hluboko v klidu a tmě – naklade 80 až 120 vajec. Někdy opakuje tento proces několikrát za sezónu. A pak, stejně tiše, jak přišla, zase mizí ve vlnách.</p>
 
-        <h3>Jak to probíhá</h3>
-        <p>Samice připlují v noci, vylezou na pláž a hledají vhodné místo. Zadními ploutvemi vyhrabou hnízdo hluboko do písku a nakládají 80–120 bílých vajec, každé velikosti pingpongového míčku. Celý proces trvá hodinu i více. Pak se vrátí do moře – a hnízdo nechají osudu.</p>
-        <p>Po přibližně 60 dnech se vylíhnou mláďata. Jejich cesta z hnízda k moři je nejnebezpečnější moment jejich života – číhají na ně ptáci, krabi i lidé. Jen malá část přežije do dospělosti.</p>
+        <h3>A co malí želváci?</h3>
+        <p>Nemají to jednoduché. Zhruba po 60 dnech se líhnou mláďata. Jejich cesta z hnízda k moři je kratičká – ale životně důležitá. Na téhle trase je čeká spousta nástrah: ptáci, krabi, lidé. Jen zlomek z nich se dostane do vody. A ještě méně se někdy vrátí zpět jako dospělí, aby položili vajíčka na stejné pláži, kde se narodili.</p>
 
-        <h3>Jak se chovat při pozorování</h3>
+        <h3>Jak to zažít s respektem</h3>
+        <p>Sezóna kladení probíhá od června do října, líhnutí pak od září do listopadu. Dostat se sem lze jen lodí nebo letadlem – Tortuguero je přístupné pouze po vodě nebo vzduchem. Právě díky tomu si zachovává svou divokost.</p>
         <ul>
           <li>Pouze s vyškolenými průvodci – individuální přístup na pláž je zakázán</li>
           <li>Přísný zákaz fotografování s bleskem – světlo dezorientuje samice i mláďata</li>
           <li>Ticho – žádný hluk, žádné telefony se svítilnami</li>
           <li>Nedotýkejte se želv ani vajec</li>
-          <li>Tmavé oblečení – nezáříte v noci</li>
+          <li>Tmavé oblečení</li>
         </ul>
 
-        <p>Hodnota tohoto zážitku spočívá přesně v tom tichu noci. V respektu k rytmu přírody, který se nedá uspěchat ani napodobit. Je to jeden z těch momentů, na které nezapomenete.</p>
+        <p>A večer, když se po celodenní tropické přeháňce roztrhá obloha a písek je ještě vlhký... začíná ta pravá kostarická magie. Nebude to fotka, ani žádný reklamní předmět. Ale zůstane něco hluboko v tobě.</p>
       </div>
 
       <div class="mt-12 p-8 bg-green-50 rounded-2xl text-center">
@@ -126,16 +166,19 @@
     </div>
   </article>
 
-  <footer class="bg-gray-900 text-gray-400 py-10">
+  <footer class="bg-green-700 text-green-100 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex gap-6 text-sm">
+        <div class="flex flex-col gap-4 items-center md:items-start">
+                    <a href="https://buymeacoffee.com/martin_guia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold text-sm px-4 py-2 rounded-full transition-colors">☕ Podpořte Martina</a>
+          <div class="flex gap-6 text-sm">
           <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
           <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
-          <a href="https://www.tiktok.com/@martin_guia" target="_blank" rel="noopener" class="hover:text-white transition-colors">TikTok</a>
+          <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube</a>
+          </div>
         </div>
         <div class="text-sm text-center">
-          <span class="text-gray-500">© 2025 Martin Guía</span>
+          <span class="text-green-200">© 2026 Martin Guía</span>
           <span class="mx-2">·</span>
           <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
           <span class="mx-2">·</span>
@@ -144,5 +187,7 @@
       </div>
     </div>
   </footer>
+  <script src="cookie-consent.js" defer></script>
+  <script src="lang-switch.js" defer></script>
 </body>
 </html>

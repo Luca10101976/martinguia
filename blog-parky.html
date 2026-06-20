@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Národní parky Kostariky – Martin Guía</title>
+  <meta name="description" content="Které národní parky Kostariky stojí za návštěvu nejvíc? Manuel Antonio, Tortuguero, Arenal, Corcovado – průvodce od Martina." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.martinguia.cz/blog-parky.html" />
+  <link rel="alternate" hreflang="cs-CZ" href="https://www.martinguia.cz/blog-parky.html" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.martinguia.cz/blog-parky-es.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.martinguia.cz/blog-parky.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Národní parky Kostariky: tipy průvodce Martina – Martin Guía" />
+  <meta property="og:description" content="Které národní parky Kostariky stojí za návštěvu nejvíc? Manuel Antonio, Tortuguero, Arenal, Corcovado – průvodce od Martina." />
+  <meta property="og:url" content="https://www.martinguia.cz/blog-parky.html" />
+  <meta property="og:image" content="https://www.martinguia.cz/logo.png" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Martin Guía" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Národní parky Kostariky: tipy průvodce Martina – Martin Guía" />
+  <meta name="twitter:description" content="Které národní parky Kostariky stojí za návštěvu nejvíc? Manuel Antonio, Tortuguero, Arenal, Corcovado – průvodce od Martina." />
+  <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
+  <title>Národní parky Kostariky: tipy průvodce Martina – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,11 +32,24 @@
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
     .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
     .prose p { margin-bottom: 1.25rem; line-height: 1.8; color: #374151; }
     .prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; color: #14532d; }
     .prose ul { padding-left: 1.5rem; margin-bottom: 1.25rem; }
     .prose li { margin-bottom: 0.5rem; color: #374151; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Národní parky Kostariky – Manuel Antonio, Tortuguero, Corcovado",
+    "description": "Které národní parky Kostariky stojí za návštěvu nejvíc? Manuel Antonio, Tortuguero, Arenal, Corcovado.",
+    "url": "https://www.martinguia.cz/blog-parky.html",
+    "datePublished": "2025-05-27",
+    "author": {"@type": "Person", "name": "Martin Guía"},
+    "publisher": {"@type": "Organization", "name": "Martin Guía", "logo": {"@type": "ImageObject", "url": "https://www.martinguia.cz/logo.png"}}
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -39,19 +71,20 @@
             </div>
           </div>
           <a href="nemovitosti.html" class="hover:text-green-700 transition-colors">Nemovitosti</a>
+          <a href="blog.html" class="text-green-700 transition-colors">Blog</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="tym.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Náš tým</a>
               <a href="reference.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Reference</a>
             </div>
           </div>
           <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
-          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1 cursor-pointer select-none">
-            <span class="font-semibold text-green-700">CZ</span><span>/</span><span>ES</span>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1">
+            <a data-lang-switch="cz" href="blog-parky.html" class="hover:text-green-700 transition-colors">CZ</a><span>/</span><a data-lang-switch="es" href="blog-parky-es.html" class="hover:text-green-700 transition-colors">ES</a>
           </div>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
+        <button id="mobile-menu-btn" type="button" aria-label="Otevřít hlavní menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
@@ -62,66 +95,81 @@
         <a href="panama.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Panama</a>
         <a href="nikaragua.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Nikaragua</a>
         <a href="nemovitosti.html" class="block py-2 hover:text-green-700">Nemovitosti</a>
+        <a href="blog.html" class="block py-2 hover:text-green-700">Blog</a>
         <a href="tym.html" class="block py-2 hover:text-green-700">Náš tým</a>
         <a href="reference.html" class="block py-2 hover:text-green-700">Reference</a>
         <a href="kontakt.html" class="inline-block mt-2 bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800">Kontakt</a>
       </div>
     </div>
   </nav>
-  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
-
-  <section class="relative h-72 overflow-hidden">
-    <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000351-2a24b2a24e/IMG_20241121_062559-8.jpeg" alt="Národní parky Kostariky" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/40"></div>
-  </section>
+  <script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+    });
+  }
+</script>
 
   <article class="py-14">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-xs text-gray-400 uppercase tracking-wide mb-3"><a href="kostarika.html" class="hover:text-green-700">Kostarika</a> · 27. 5. 2025</p>
-      <h1 class="text-3xl md:text-4xl text-green-800 mb-8">Národní parky Kostariky – džungle, sopky i vodopády</h1>
+      <h1 class="text-3xl md:text-4xl text-green-800 mb-8">Národní parky Kostariky</h1>
+
+      <div class="mb-8 rounded-2xl overflow-hidden bg-green-100 h-72 flex items-center justify-center">
+        <!-- Sem ulož foto: parky-tortuguero.jpg -->
+        <img src="parky-tortuguero.jpg" alt="Tortuguero – kanály a džungle" class="w-full h-72 object-cover" onerror="this.style.display='none'" />
+        <span class="text-6xl absolute">🌿</span>
+      </div>
 
       <div class="prose">
-        <p>Kostarika chrání přes 25 % svého území jako národní parky a rezervace. To není náhoda – biodiverzita tady patří k největším na světě. Která parky stojí za návštěvu nejvíc?</p>
+        <p>Když se řekne Kostarika, většině lidí se vybaví slunce, palmy a pláže. Ale to největší kouzlo se ukrývá jinde – v deštných pralesích, u sopek, v mlžném lese i v divokých zátokách oceánu.</p>
+
+        <p>Kostarika chrání přes <strong>25 % svého území</strong>. V praxi to znamená, že tu najdeš: přes 30 národních parků, desítky biologických rezervací a jedinečnou možnost vidět přírodu tak, jak vypadala tisíce let zpět. Každý park má svůj charakter – od tropického deštného lesa po sopečné krátery, pobřežní útesy i laguny se želvami.</p>
 
         <h3>Manuel Antonio</h3>
-        <p>Nejmenší národní park v zemi, ale jeden z nejkrásnějších. Bílé pláže, pralesy plné opic a překrásný výhled na Tichý oceán. Vzdálený přibližně 2,5 hodiny jízdy od San José.</p>
+        <p>Jen pár hodin od San José leží malý park s obrovským kouzlem. Bělostné pláže, prales plný opic a lenochodů a výhledy, jaké byste nečekali v nejmenším národním parku Kostariky. Projděte se po stezkách, vykoupejte se v tyrkysové zátoce nebo se nechte unést tichem divočiny.</p>
         <ul>
-          <li>Otevřeno: denně mimo úterý, 7:00–16:00</li>
-          <li>Vstup: cca 18 USD / osoba</li>
-          <li>Tip: rezervujte vstupenky online, kapacita je omezena</li>
+          <li>📍 2,5 h od San José autem nebo autobusem do Queposu</li>
+          <li>🕒 Otevřeno každý den mimo úterý, 7:00–16:00</li>
+          <li>🎟 Vstup: cca 18 USD – rezervace online přes SINAC nutná</li>
         </ul>
 
         <h3>Tortuguero</h3>
-        <p>Dostupný pouze lodí – a právě to ho dělá výjimečným. Síť kanálů, hustá džungle a možnost vidět mořské želvy klást vejce přímo na pláži. Unikátní zážitek, který nenajdete jinde.</p>
+        <p>Amazonie v malém. Do Tortuguera se dostanete jen lodí. Čeká vás spletitá síť kanálů, džungle a šance vidět mořské želvy klást vejce přímo na pláži. Tiché i divoké zároveň.</p>
         <ul>
-          <li>Otevřeno: denně, 6:00–12:00 a 13:00–16:00</li>
-          <li>Vstup: cca 17 USD / osoba</li>
-          <li>Sezóna želv: červen–říjen</li>
+          <li>📍 Přístup lodí z La Pavony nebo letadlem ze San José</li>
+          <li>🕒 Otevřeno denně 6:00–12:00 a 13:00–16:00</li>
+          <li>🎟 Vstup: cca 17 USD + doprava lodí</li>
         </ul>
 
         <h3>Arenal</h3>
-        <p>Ikonická sopka Arenal dominuje horizontu. Lávové stezky, visutí mosty v korunách stromů a termální prameny u jejích úpatí – ideální kombinace přírody a relaxace. Město La Fortuna je jen 3 hodiny od San José.</p>
+        <p>Impozantní sopka, pralesní stezky, lávové pole a horké prameny. Ráno výšlap mlhou, odpoledne koupání v termálech a večer pozorování hvězd se siluetou sopky na obzoru.</p>
         <ul>
-          <li>Otevřeno: denně 8:00–16:00</li>
-          <li>Vstup: cca 15 USD / osoba</li>
-          <li>Tip: termální prameny jsou nejkrásnější za soumraku</li>
+          <li>📍 La Fortuna – 3 h autem ze San José</li>
+          <li>🕒 Otevřeno denně 8:00–16:00</li>
+          <li>🎟 Vstup: cca 15 USD; termály a lanové mosty mají vlastní vstupné</li>
         </ul>
 
         <h3>Corcovado</h3>
-        <p>Nejdivočejší park Kostariky. Poloostrov Osa skrývá džungli, která se jen málo změnila za tisíce let. Tapíři, jaguáři, vzácné druhy ptáků. Přístupný pouze s průvodcem – a to z dobrého důvodu.</p>
+        <p>Na poloostrově Osa leží kousek planety, kde příroda vládne. Tapíři, jaguáři, ary šarlatové... V parku Corcovado nenajdete signál ani davy turistů. Jen divokou přírodu v její nejčistší podobě.</p>
         <ul>
-          <li>Otevřeno: denně 7:00–16:00</li>
-          <li>Vstup: cca 15 USD + povinný licencovaný průvodce</li>
-          <li>Ubytování uvnitř parku: nutná rezervace dlouho dopředu</li>
+          <li>📍 Výlet z Drake Bay nebo Puerto Jiménez – s průvodcem povinně</li>
+          <li>🕒 Otevřeno denně 7:00–16:00</li>
+          <li>🎟 Vstup: cca 15 USD + průvodce + rezervace přes SINAC předem</li>
         </ul>
 
-        <h3>Praktické rady pro návštěvu parků</h3>
+        <h3>Praktické tipy před výjezdem</h3>
         <ul>
-          <li>Rezervujte vstupenky online – oblíbené parky mají denní limity návštěvníků</li>
-          <li>Oblečte se do dlouhých kalhot a pevné obuvi pro trekking</li>
-          <li>S sebou: repelent, sluneční krém, dostatek vody a svačina</li>
-          <li>Nejlepší čas pro pozorování zvířat: brzy ráno nebo pozdě odpoledne</li>
+          <li>✅ Vstupy rezervujte online na <strong>sinac.go.cr</strong> – Manuel Antonio a Corcovado mají denní kapacity</li>
+          <li>✅ Oblečte se pohodlně – pevné boty, repelent, lehké oblečení s dlouhým rukávem</li>
+          <li>✅ Období sucha (prosinec–duben) je ideální; v dešti je vše zelenější, ale stezky mohou být uzavřeny</li>
+          <li>✅ V Corcovadu je průvodce povinný, jinde velmi doporučený – uvidíte daleko víc</li>
         </ul>
+
+        <p>Kostarika je zelené srdce Střední Ameriky. Vstupte do ní s respektem – nechte za sebou jen stopy a vezměte si jen vzpomínky.</p>
       </div>
 
       <div class="mt-12 p-8 bg-green-50 rounded-2xl text-center">
@@ -140,16 +188,19 @@
     </div>
   </article>
 
-  <footer class="bg-gray-900 text-gray-400 py-10">
+  <footer class="bg-green-700 text-green-100 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex gap-6 text-sm">
+        <div class="flex flex-col gap-4 items-center md:items-start">
+                    <a href="https://buymeacoffee.com/martin_guia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold text-sm px-4 py-2 rounded-full transition-colors">☕ Podpořte Martina</a>
+          <div class="flex gap-6 text-sm">
           <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
           <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
-          <a href="https://www.tiktok.com/@martin_guia" target="_blank" rel="noopener" class="hover:text-white transition-colors">TikTok</a>
+          <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube</a>
+          </div>
         </div>
         <div class="text-sm text-center">
-          <span class="text-gray-500">© 2025 Martin Guía</span>
+          <span class="text-green-200">© 2026 Martin Guía</span>
           <span class="mx-2">·</span>
           <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
           <span class="mx-2">·</span>
@@ -158,5 +209,7 @@
       </div>
     </div>
   </footer>
+  <script src="cookie-consent.js" defer></script>
+  <script src="lang-switch.js" defer></script>
 </body>
 </html>

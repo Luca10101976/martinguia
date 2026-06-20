@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tipy, průvodce a příběhy ze Střední Ameriky. Kostarika, Panama, Nikaragua – přímé zkušenosti průvodce Martina." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.martinguia.cz/blog.html" />
+  <link rel="alternate" hreflang="cs-CZ" href="https://www.martinguia.cz/blog.html" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.martinguia.cz/blog-es.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.martinguia.cz/blog.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog – O destinacích – Martin Guía" />
+  <meta property="og:description" content="Tipy, průvodce a příběhy ze Střední Ameriky. Kostarika, Panama, Nikaragua – přímé zkušenosti průvodce Martina." />
+  <meta property="og:url" content="https://www.martinguia.cz/blog.html" />
+  <meta property="og:image" content="https://www.martinguia.cz/logo.png" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Martin Guía" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog – O destinacích – Martin Guía" />
+  <meta name="twitter:description" content="Tipy, průvodce a příběhy ze Střední Ameriky. Kostarika, Panama, Nikaragua – přímé zkušenosti průvodce Martina." />
+  <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
+  <title>Blog – O destinacích – Martin Guía</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
+    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
+    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Martin Guía Blog",
+    "description": "Tipy, průvodce a příběhy ze Střední Ameriky.",
+    "url": "https://www.martinguia.cz/blog.html",
+    "author": {
+      "@type": "Person",
+      "name": "Martin Guía"
+    }
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <nav class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="logo.png" alt="Martin Guía" class="h-10 w-auto" />
+        </a>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-700">
+          <a href="index.html" class="hover:text-green-700 transition-colors">Úvod</a>
+          <a href="zajezdy.html" class="hover:text-green-700 transition-colors">Zájezdy</a>
+          <div class="nav-dropdown-wrapper relative">
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown py-1">
+              <a href="kostarika.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Kostarika</a>
+              <a href="panama.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Panama</a>
+              <a href="nikaragua.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Nikaragua</a>
+            </div>
+          </div>
+          <a href="nemovitosti.html" class="hover:text-green-700 transition-colors">Nemovitosti</a>
+          <a href="blog.html" class="text-green-700 transition-colors">Blog</a>
+          <div class="nav-dropdown-wrapper relative">
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown py-1">
+              <a href="tym.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Náš tým</a>
+              <a href="reference.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Reference</a>
+            </div>
+          </div>
+          <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1">
+            <a data-lang-switch="cz" href="blog.html" class="hover:text-green-700 transition-colors">CZ</a><span>/</span><a data-lang-switch="es" href="blog-es.html" class="hover:text-green-700 transition-colors">ES</a>
+          </div>
+        </div>
+        <button id="mobile-menu-btn" type="button" aria-label="Otevřít hlavní menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-1 text-sm font-semibold text-gray-700 border-t border-gray-100 pt-3">
+        <a href="index.html" class="block py-2 hover:text-green-700">Úvod</a>
+        <a href="zajezdy.html" class="block py-2 hover:text-green-700">Zájezdy</a>
+        <a href="kostarika.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Kostarika</a>
+        <a href="panama.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Panama</a>
+        <a href="nikaragua.html" class="block py-2 pl-4 text-gray-500 hover:text-green-700">Nikaragua</a>
+        <a href="nemovitosti.html" class="block py-2 hover:text-green-700">Nemovitosti</a>
+        <a href="blog.html" class="block py-2 hover:text-green-700">Blog</a>
+        <a href="tym.html" class="block py-2 hover:text-green-700">Náš tým</a>
+        <a href="reference.html" class="block py-2 hover:text-green-700">Reference</a>
+        <a href="kontakt.html" class="inline-block mt-2 bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+  <script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+    });
+  }
+</script>
+
+  <section class="py-16 bg-green-50 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">O destinacích</h1>
+      <p class="text-lg text-gray-600">Průvodce, tipy a příběhy ze Střední Ameriky přímo od Martina</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <a href="blog-boty.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <div class="bg-green-900 h-44 flex items-center justify-center">
+            <span class="text-5xl">👟</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 28. 1. 2026</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Boty do pralesa i na pláž</h3>
+            <p class="text-sm text-gray-600">Lehké terénní boty nebo pohorky? Co skutečně potřebujete – a co nechat doma.</p>
+          </div>
+        </a>
+
+        <a href="blog-prakticke-informace.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="kostarika-prakticke-hero.jpg" alt="Praktické informace Kostarika" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 21. 5. 2025</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Praktické informace – Kostarika</h3>
+            <p class="text-sm text-gray-600">Ceny, doprava, počasí, zdraví a bezpečnost. Vše co potřebujete vědět před cestou.</p>
+          </div>
+        </a>
+
+        <a href="blog-karibik.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000508-c3589c358c/IMG_20230419_155318%2018.15.44.jpeg" alt="Pláže Kostariky" class="w-full h-44 object-cover" onerror="this.parentElement.classList.add('bg-green-800'); this.remove();" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 10. 6. 2025</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Karibik vs. Pacifik – pláže</h3>
+            <p class="text-sm text-gray-600">Dvě tváře Kostariky. Která strana vás uchvátí víc? Záleží na tom, co hledáte.</p>
+          </div>
+        </a>
+
+        <a href="blog-parky.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000351-2a24b2a24e/IMG_20241121_062559-8.jpeg" alt="Národní parky Kostariky" class="w-full h-44 object-cover" onerror="this.parentElement.classList.add('bg-green-700'); this.remove();" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 27. 5. 2025</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Národní parky Kostariky</h3>
+            <p class="text-sm text-gray-600">Manuel Antonio, Tortuguero, Arenal, Corcovado. Které parky stojí za návštěvu nejvíc?</p>
+          </div>
+        </a>
+
+        <a href="blog-zelvy.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000335-7246f72470/481083200_659977296416133_6150539173394769560_n.jpeg" alt="Mořské želvy Tortuguero" class="w-full h-44 object-cover" onerror="this.parentElement.classList.add('bg-green-900'); this.remove();" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 26. 5. 2025</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Noční zázrak – kladení vajec želv</h3>
+            <p class="text-sm text-gray-600">Je půlnoc. Z moře vychází obrovská silueta. Mořská želva míří na písek. Tohle je Tortuguero.</p>
+          </div>
+        </a>
+
+        <a href="blog-obchody.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="kostarika-obchody-hero.jpg" alt="Místní trh a ceny v Kostarice" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 23. 5. 2024</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Místní obchody, ceny a stravování</h3>
+            <p class="text-sm text-gray-600">Panadería, pulpería, sodas. Jak nakupovat a jíst v Kostarice jako místní.</p>
+          </div>
+        </a>
+
+        <a href="blog-zacatky.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="kostarika-zacatky-hero.jpg" alt="Mé začátky v Kostarice" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 14. 9. 2023</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Mé začátky v Kostarice</h3>
+            <p class="text-sm text-gray-600">Jak jsem přijel bez španělštiny a zjistil, že Kostarika mi změnila život. Martinův příběh.</p>
+          </div>
+        </a>
+
+        <a href="blog-kava.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <img src="kostarika-kava-hero.jpg" alt="Příběh kávového a banánového ráje" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Kostarika · 26. 3. 2023</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Příběh kávového a banánového ráje</h3>
+            <p class="text-sm text-gray-600">Jak se Kostarika stala první zemí Střední Ameriky, která vyvážela kávu a banány do světa.</p>
+          </div>
+        </a>
+
+        <a href="blog-nikaragua-prakticke.html" class="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm block">
+          <div class="bg-teal-800 h-44 flex items-center justify-center">
+            <span class="text-5xl">🌋</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Nikaragua · 21. 5. 2025</span>
+            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Praktické informace – Nikaragua</h3>
+            <p class="text-sm text-gray-600">Letenky, ceny, bezpečnost, Granada, León, sopka Masaya. Opomíjený klenot Střední Ameriky.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-green-50 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-3xl text-green-800 mb-3">Plánujete cestu do Kostariky?</h2>
+      <p class="text-gray-600 text-base mb-7">Napište nám a připravíme itinerář přesně pro vás.</p>
+      <a href="kontakt.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Napsat Martinovi</a>
+    </div>
+  </section>
+
+  <footer class="bg-green-700 text-green-100 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex flex-col gap-4 items-center md:items-start">
+                    <a href="https://buymeacoffee.com/martin_guia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold text-sm px-4 py-2 rounded-full transition-colors">☕ Podpořte Martina</a>
+          <div class="flex gap-6 text-sm">
+          <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
+          <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube</a>
+          </div>
+        </div>
+        <div class="text-sm text-center">
+          <span class="text-green-200">© 2026 Martin Guía</span>
+          <span class="mx-2">·</span>
+          <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
+          <span class="mx-2">·</span>
+          <a href="tel:+50686755419" class="hover:text-white transition-colors">+506 8675 5419</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="cookie-consent.js" defer></script>
+  <script src="lang-switch.js" defer></script>
+</body>
+</html>

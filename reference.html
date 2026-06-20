@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reference – Martin Guía</title>
+  <meta name="description" content="Přečtěte si, co říkají klienti, kteří s Martinem cestovali po Kostarice, Panamě a Nikaragui. Stovky spokojených cestovatelů." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.martinguia.cz/reference.html" />
+  <link rel="alternate" hreflang="cs-CZ" href="https://www.martinguia.cz/reference.html" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.martinguia.cz/reference-es.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.martinguia.cz/reference.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Reference – co říkají naši klienti – Martin Guía" />
+  <meta property="og:description" content="Přečtěte si, co říkají klienti, kteří s Martinem cestovali po Kostarice, Panamě a Nikaragui. Stovky spokojených cestovatelů." />
+  <meta property="og:url" content="https://www.martinguia.cz/reference.html" />
+  <meta property="og:image" content="https://www.martinguia.cz/logo.png" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Martin Guía" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reference – co říkají naši klienti – Martin Guía" />
+  <meta name="twitter:description" content="Přečtěte si, co říkají klienti, kteří s Martinem cestovali po Kostarice, Panamě a Nikaragui. Stovky spokojených cestovatelů." />
+  <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
+  <title>Reference – co říkají naši klienti – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +32,27 @@
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
     .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Martin Guía",
+    "url": "https://www.martinguia.cz",
+    "logo": "https://www.martinguia.cz/logo.png",
+    "description": "Zájezdy na míru, průvodce a nemovitosti ve Střední Americe.",
+    "telephone": "+50686755419",
+    "email": "info@martinguia.cz",
+    "areaServed": ["Kostarika", "Panama", "Nikaragua"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "ratingCount": "100"
+    }
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -27,7 +66,7 @@
           <a href="index.html" class="hover:text-green-700 transition-colors">Úvod</a>
           <a href="zajezdy.html" class="hover:text-green-700 transition-colors">Zájezdy</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="kostarika.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Kostarika</a>
               <a href="panama.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Panama</a>
@@ -43,11 +82,11 @@
             </div>
           </div>
           <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
-          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1 cursor-pointer select-none">
-            <span class="font-semibold text-green-700">CZ</span><span>/</span><span>ES</span>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1">
+            <a data-lang-switch="cz" href="reference.html" class="hover:text-green-700 transition-colors">CZ</a><span>/</span><a data-lang-switch="es" href="reference-es.html" class="hover:text-green-700 transition-colors">ES</a>
           </div>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
+        <button id="mobile-menu-btn" type="button" aria-label="Otevřít hlavní menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
@@ -64,7 +103,16 @@
       </div>
     </div>
   </nav>
-  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
+  <script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+    });
+  }
+</script>
 
   <section class="py-16 bg-green-50 text-center">
     <div class="max-w-3xl mx-auto px-4">
@@ -153,24 +201,27 @@
     </div>
   </section>
 
-  <section class="py-14 bg-green-800 text-white text-center">
+  <section class="py-10 bg-green-50 text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h2 class="text-3xl mb-4">Přidejte se k nim</h2>
-      <p class="text-green-200 mb-8">Napište nám a připravíme cestu přesně pro vás.</p>
-      <a href="kontakt.html" class="inline-block bg-white text-green-800 font-semibold px-8 py-3 rounded-full hover:bg-green-50 transition-colors">Napsat Martinovi</a>
+      <h2 class="text-3xl text-green-800 mb-3">Přidejte se k nim</h2>
+      <p class="text-gray-600 text-base mb-7">Napište nám a připravíme cestu přesně pro vás.</p>
+      <a href="kontakt.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Napsat Martinovi</a>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-gray-400 py-10">
+  <footer class="bg-green-700 text-green-100 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex gap-6 text-sm">
+        <div class="flex flex-col gap-4 items-center md:items-start">
+                    <a href="https://buymeacoffee.com/martin_guia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold text-sm px-4 py-2 rounded-full transition-colors">☕ Podpořte Martina</a>
+          <div class="flex gap-6 text-sm">
           <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
           <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
-          <a href="https://www.tiktok.com/@martin_guia" target="_blank" rel="noopener" class="hover:text-white transition-colors">TikTok</a>
+          <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube</a>
+          </div>
         </div>
         <div class="text-sm text-center">
-          <span class="text-gray-500">© 2025 Martin Guía</span>
+          <span class="text-green-200">© 2026 Martin Guía</span>
           <span class="mx-2">·</span>
           <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
           <span class="mx-2">·</span>
@@ -179,5 +230,7 @@
       </div>
     </div>
   </footer>
+  <script src="cookie-consent.js" defer></script>
+  <script src="lang-switch.js" defer></script>
 </body>
 </html>

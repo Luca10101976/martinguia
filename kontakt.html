@@ -3,6 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Napište nebo zavolejte Martinovi. Nezávazná konzultace zdarma. Plánujeme zájezdy do Kostariky, Panamy a Nikaraguy na míru." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.martinguia.cz/kontakt.html" />
+  <link rel="alternate" hreflang="cs-CZ" href="https://www.martinguia.cz/kontakt.html" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.martinguia.cz/kontakt-es.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.martinguia.cz/kontakt.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kontakt – Martin Guía" />
+  <meta property="og:description" content="Napište nebo zavolejte Martinovi. Nezávazná konzultace zdarma. Plánujeme zájezdy do Kostariky, Panamy a Nikaraguy na míru." />
+  <meta property="og:url" content="https://www.martinguia.cz/kontakt.html" />
+  <meta property="og:image" content="https://www.martinguia.cz/logo.png" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Martin Guía" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kontakt – Martin Guía" />
+  <meta name="twitter:description" content="Napište nebo zavolejte Martinovi. Nezávazná konzultace zdarma. Plánujeme zájezdy do Kostariky, Panamy a Nikaraguy na míru." />
+  <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Kontakt – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +32,26 @@
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
     .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Martin Guía",
+    "url": "https://www.martinguia.cz",
+    "logo": "https://www.martinguia.cz/logo.png",
+    "description": "Zájezdy na míru, průvodce a nemovitosti ve Střední Americe.",
+    "telephone": "+50686755419",
+    "email": "info@martinguia.cz",
+    "areaServed": ["Kostarika", "Panama", "Nikaragua"],
+    "sameAs": [
+      "https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua",
+      "https://www.instagram.com/martin_guia_/",
+      "https://www.youtube.com/@m.b.7343"
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -27,7 +65,7 @@
           <a href="index.html" class="hover:text-green-700 transition-colors">Úvod</a>
           <a href="zajezdy.html" class="hover:text-green-700 transition-colors">Zájezdy</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="kostarika.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Kostarika</a>
               <a href="panama.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Panama</a>
@@ -36,18 +74,18 @@
           </div>
           <a href="nemovitosti.html" class="hover:text-green-700 transition-colors">Nemovitosti</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="tym.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Náš tým</a>
               <a href="reference.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Reference</a>
             </div>
           </div>
           <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
-          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1 cursor-pointer select-none">
-            <span class="font-semibold text-green-700">CZ</span><span>/</span><span>ES</span>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1">
+            <a data-lang-switch="cz" href="kontakt.html" class="hover:text-green-700 transition-colors">CZ</a><span>/</span><a data-lang-switch="es" href="kontakt-es.html" class="hover:text-green-700 transition-colors">ES</a>
           </div>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
+        <button id="mobile-menu-btn" type="button" aria-label="Otevřít hlavní menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
@@ -64,88 +102,144 @@
       </div>
     </div>
   </nav>
-  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
+  <script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+    });
+  }
+</script>
 
-  <section class="py-20 bg-green-800 text-white text-center">
-    <div class="max-w-3xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl mb-4">Vaše cesta začíná zde</h1>
-      <p class="text-xl text-green-200">Napište nám, rádi připravíme cestu přesně podle vašich přání. Nezávazná konzultace zdarma.</p>
-    </div>
-  </section>
+  <section class="py-16 bg-green-50">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl text-green-800 mb-3">Napište Martinovi</h1>
+      <p class="text-gray-500 text-base mb-10">Nezávazná konzultace zdarma · Odpověď do 24 hodin</p>
+      <div id="contact-status" class="hidden mb-6 rounded-xl px-4 py-3 text-sm font-semibold"></div>
 
-  <section class="py-16">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-        <!-- FORM -->
-        <div>
-          <h2 class="text-2xl text-green-800 mb-6">Napište nám</h2>
-          <form class="space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold text-gray-500 uppercase mb-1">Jméno</label>
-                <input type="text" placeholder="Vaše jméno" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-gray-500 uppercase mb-1">Email</label>
-                <input type="email" placeholder="vas@email.cz" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" />
-              </div>
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-gray-500 uppercase mb-1">Telefon</label>
-              <input type="tel" placeholder="+420 ..." class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" />
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-gray-500 uppercase mb-1">Zpráva</label>
-              <textarea rows="5" placeholder="O jaký zájezd máte zájem? Kdy cestujete, kolik vás bude, jaké máte přání..." class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 rounded-full transition-colors">Odeslat zprávu</button>
-          </form>
-        </div>
-
-        <!-- CONTACT INFO -->
-        <div>
-          <h2 class="text-2xl text-green-800 mb-6">Přímý kontakt</h2>
-          <div class="space-y-6">
-            <div class="p-6 bg-green-50 rounded-2xl">
-              <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Martin – průvodce</p>
-              <a href="tel:+50686755419" class="text-xl font-semibold text-green-800 hover:underline">+506 8675 5419</a>
-              <p class="text-sm text-gray-500 mt-1">Kostarika (WhatsApp)</p>
-            </div>
-            <div class="p-6 bg-green-50 rounded-2xl">
-              <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Tomáš Toběrný – zástupce ČR/SK</p>
-              <a href="tel:+420777029922" class="text-xl font-semibold text-green-800 hover:underline">+420 777 029 922</a>
-              <p class="text-sm text-gray-500 mt-1">Česká republika</p>
-            </div>
-            <div class="p-6 bg-green-50 rounded-2xl">
-              <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Email</p>
-              <a href="mailto:info@martinguia.cz" class="text-xl font-semibold text-green-800 hover:underline">info@martinguia.cz</a>
-            </div>
-            <div class="pt-2">
-              <p class="text-xs font-semibold text-gray-500 uppercase mb-3">Sledujte nás</p>
-              <div class="flex gap-4">
-                <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="text-green-700 font-semibold hover:underline">Facebook</a>
-                <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="text-green-700 font-semibold hover:underline">Instagram</a>
-                <a href="https://www.tiktok.com/@martin_guia" target="_blank" rel="noopener" class="text-green-700 font-semibold hover:underline">TikTok</a>
-              </div>
-            </div>
+      <div class="text-left bg-white rounded-2xl border border-green-200 p-6 md:p-8 mb-8">
+        <p class="text-green-700 text-sm uppercase tracking-wide font-semibold mb-2">Doporučený postup</p>
+        <h2 class="text-2xl text-green-800 mb-3">Nejrychlejší je WhatsApp nebo telefon</h2>
+        <p class="text-gray-600 mb-6">Pokud chcete rychlou odpověď, napište Martinovi na WhatsApp. Pro delší dotazy klidně pošlete e-mail.</p>
+        <div class="space-y-3">
+          <a href="https://wa.me/50686755419?text=Dobrý%20den%2C%20mám%20zájem%20o%20zájezd%20do%20Kostariky." target="_blank" rel="noopener" class="block w-full text-center bg-green-700 text-white font-bold py-3 rounded-full hover:bg-green-800 transition-colors">WhatsApp Martin (+506 8675 5419)</a>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a href="tel:+50686755419" class="block w-full text-center border-2 border-green-700 text-green-800 font-bold py-3 rounded-full hover:bg-green-700 hover:text-white transition-colors">Zavolat Martinovi</a>
+            <a href="mailto:info@martinguia.cz?subject=Dotaz%20ze%20stránky%20martinguia.cz" class="block w-full text-center border-2 border-green-700 text-green-800 font-bold py-3 rounded-full hover:bg-green-700 hover:text-white transition-colors">Napsat e-mail</a>
           </div>
         </div>
+      </div>
 
+      <div class="text-left bg-white rounded-2xl border border-gray-200 p-6 md:p-8">
+        <h2 class="text-2xl text-green-800 mb-3">Nebo napište přes formulář</h2>
+        <p class="text-gray-600 mb-6">Formulář je záložní varianta. Odpovídáme co nejdříve.</p>
+        <form class="space-y-4" action="/api/contact" method="POST">
+          <input type="hidden" name="source" value="kontakt.html" />
+          <input type="hidden" name="sent_at" value="" />
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden" />
+          <input type="text" name="jmeno" placeholder="Vaše jméno" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-green-700" />
+          <input type="email" name="email" placeholder="Váš e-mail" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-green-700" />
+          <textarea rows="5" name="zprava" placeholder="Vaše zpráva" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-green-700 resize-none"></textarea>
+          <div id="turnstile-wrap" class="hidden">
+            <div id="turnstile-widget"></div>
+            <p id="turnstile-help" class="text-xs text-gray-500 mt-2">Bezpečnostní ověření proti spamu.</p>
+          </div>
+          <button type="submit" class="w-full sm:w-auto bg-green-700 text-white font-bold px-8 py-3 rounded-full hover:bg-green-800 transition-colors">Odeslat zprávu</button>
+        </form>
+        <div class="pt-8 mt-8 border-t border-gray-200">
+          <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">Sledujte nás</p>
+          <div class="flex flex-wrap gap-5">
+            <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="text-green-700 font-semibold hover:underline">Facebook</a>
+            <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="text-green-700 font-semibold hover:underline">Instagram</a>
+            <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="text-green-700 font-semibold hover:underline">YouTube</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-gray-400 py-10">
+  <script>
+    (function () {
+      const form = document.querySelector('form[action="/api/contact"]');
+      if (form) {
+        const sentAtInput = form.querySelector('input[name="sent_at"]');
+        if (sentAtInput && !sentAtInput.value) {
+          sentAtInput.value = String(Date.now());
+        }
+      }
+
+      const statusEl = document.getElementById("contact-status");
+      if (!statusEl) return;
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("odeslano") === "1") {
+        statusEl.className = "mb-6 rounded-xl px-4 py-3 text-sm font-semibold bg-green-100 text-green-800 border border-green-200";
+        statusEl.textContent = "Děkujeme, zpráva byla odeslána.";
+      } else if (params.get("chyba") === "konfigurace") {
+        statusEl.className = "mb-6 rounded-xl px-4 py-3 text-sm font-semibold bg-yellow-100 text-yellow-800 border border-yellow-200";
+        statusEl.textContent = "Formulář není ještě plně aktivovaný (e-mailová konfigurace). Pro rychlé spojení použijte WhatsApp, telefon nebo e-mail.";
+      } else if (params.get("chyba") === "limit") {
+        statusEl.className = "mb-6 rounded-xl px-4 py-3 text-sm font-semibold bg-yellow-100 text-yellow-800 border border-yellow-200";
+        statusEl.textContent = "Poslali jste příliš mnoho zpráv během krátké chvíle. Zkuste to prosím za pár minut.";
+      } else if (params.get("chyba") === "captcha") {
+        statusEl.className = "mb-6 rounded-xl px-4 py-3 text-sm font-semibold bg-yellow-100 text-yellow-800 border border-yellow-200";
+        statusEl.textContent = "Bezpečnostní ověření se nepodařilo. Zkuste formulář odeslat znovu.";
+      } else if (params.get("chyba")) {
+        statusEl.className = "mb-6 rounded-xl px-4 py-3 text-sm font-semibold bg-red-100 text-red-800 border border-red-200";
+        statusEl.textContent = "Zprávu se nepodařilo odeslat. Zkuste prosím WhatsApp, e-mail nebo telefon.";
+      } else {
+        return;
+      }
+      statusEl.classList.remove("hidden");
+    })();
+  </script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <script>
+    (function () {
+      var form = document.querySelector('form[action="/api/contact"]');
+      if (!form) return;
+      var wrap = document.getElementById("turnstile-wrap");
+      var help = document.getElementById("turnstile-help");
+      if (!wrap) return;
+
+      fetch("/api/contact-config", { headers: { Accept: "application/json" } })
+        .then(function (res) { return res.ok ? res.json() : { turnstileSiteKey: "" }; })
+        .then(function (cfg) {
+          var siteKey = (cfg && cfg.turnstileSiteKey) ? String(cfg.turnstileSiteKey) : "";
+          if (!siteKey) return;
+          wrap.classList.remove("hidden");
+          function render() {
+            if (!window.turnstile) {
+              setTimeout(render, 120);
+              return;
+            }
+            window.turnstile.render("#turnstile-widget", {
+              sitekey: siteKey,
+              theme: "light"
+            });
+          }
+          render();
+        })
+        .catch(function () {
+          if (help) help.textContent = "Bezpečnostní ověření se nepodařilo načíst.";
+        });
+    })();
+  </script>
+
+  <footer class="bg-green-700 text-green-100 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex gap-6 text-sm">
+        <div class="flex flex-col gap-4 items-center md:items-start">
+                    <a href="https://buymeacoffee.com/martin_guia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold text-sm px-4 py-2 rounded-full transition-colors">☕ Podpořte Martina</a>
+          <div class="flex gap-6 text-sm">
           <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
           <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
-          <a href="https://www.tiktok.com/@martin_guia" target="_blank" rel="noopener" class="hover:text-white transition-colors">TikTok</a>
+          <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube</a>
+          </div>
         </div>
         <div class="text-sm text-center">
-          <span class="text-gray-500">© 2025 Martin Guía</span>
+          <span class="text-green-200">© 2026 Martin Guía</span>
           <span class="mx-2">·</span>
           <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
           <span class="mx-2">·</span>
@@ -154,5 +248,7 @@
       </div>
     </div>
   </footer>
+  <script src="cookie-consent.js" defer></script>
+  <script src="lang-switch.js" defer></script>
 </body>
 </html>

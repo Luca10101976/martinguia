@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zájezdy – Martin Guía</title>
+  <meta name="description" content="Organizované zájezdy a výlety na míru po Střední Americe s českým průvodcem Martinem. Kostarika, Panama, Nikaragua." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.martinguia.cz/zajezdy.html" />
+  <link rel="alternate" hreflang="cs-CZ" href="https://www.martinguia.cz/zajezdy.html" />
+  <link rel="alternate" hreflang="es-ES" href="https://www.martinguia.cz/zajezdy-es.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.martinguia.cz/zajezdy.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zájezdy do Kostariky, Panamy a Nikaraguy – Martin Guía" />
+  <meta property="og:description" content="Organizované zájezdy a výlety na míru po Střední Americe s českým průvodcem Martinem. Kostarika, Panama, Nikaragua." />
+  <meta property="og:url" content="https://www.martinguia.cz/zajezdy.html" />
+  <meta property="og:image" content="https://www.martinguia.cz/logo.png" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Martin Guía" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zájezdy do Kostariky, Panamy a Nikaraguy – Martin Guía" />
+  <meta name="twitter:description" content="Organizované zájezdy a výlety na míru po Střední Americe s českým průvodcem Martinem. Kostarika, Panama, Nikaragua." />
+  <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
+  <title>Zájezdy do Kostariky, Panamy a Nikaraguy – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <style>
@@ -13,7 +32,26 @@
     .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
     .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
+    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Martin Guía",
+    "url": "https://www.martinguia.cz",
+    "logo": "https://www.martinguia.cz/logo.png",
+    "description": "Zájezdy na míru, průvodce a nemovitosti ve Střední Americe.",
+    "telephone": "+50686755419",
+    "email": "info@martinguia.cz",
+    "areaServed": ["Kostarika", "Panama", "Nikaragua"],
+    "sameAs": [
+      "https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua",
+      "https://www.instagram.com/martin_guia_/",
+      "https://www.youtube.com/@m.b.7343"
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -25,7 +63,7 @@
           <a href="index.html" class="hover:text-green-700 transition-colors">Úvod</a>
           <a href="zajezdy.html" class="text-green-700">Zájezdy</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">Destinace <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="kostarika.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Kostarika</a>
               <a href="panama.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Panama</a>
@@ -34,16 +72,18 @@
           </div>
           <a href="nemovitosti.html" class="hover:text-green-700 transition-colors">Nemovitosti</a>
           <div class="nav-dropdown-wrapper relative">
-            <button class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <button type="button" aria-haspopup="true" class="hover:text-green-700 transition-colors flex items-center gap-1">O nás <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown py-1">
               <a href="tym.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Náš tým</a>
               <a href="reference.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700">Reference</a>
             </div>
           </div>
           <a href="kontakt.html" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition-colors">Kontakt</a>
-          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1 cursor-pointer"><span class="font-semibold text-green-700">CZ</span><span>/</span><span>ES</span></div>
+          <div class="flex items-center gap-1 text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1">
+            <a data-lang-switch="cz" href="zajezdy.html" class="hover:text-green-700 transition-colors">CZ</a><span>/</span><a data-lang-switch="es" href="zajezdy-es.html" class="hover:text-green-700 transition-colors">ES</a>
+          </div>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <button id="mobile-menu-btn" type="button" aria-label="Otevřít hlavní menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded text-gray-600 hover:text-green-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
       <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-1 text-sm font-semibold text-gray-700 border-t border-gray-100 pt-3">
         <a href="index.html" class="block py-2 hover:text-green-700">Úvod</a>
@@ -58,7 +98,16 @@
       </div>
     </div>
   </nav>
-  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});</script>
+  <script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+    });
+  }
+</script>
 
   <!-- PAGE HEADER -->
   <section class="bg-green-50 py-16">
@@ -86,7 +135,7 @@
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
               <div><span class="text-gray-400">Cena</span><p class="font-semibold text-green-700">od 2 018 USD / osoba</p></div>
               <div><span class="text-gray-400">Skupina</span><p class="font-semibold">4–10 osob</p></div>
-              <div class="col-span-2"><span class="text-gray-400">Termín</span><p class="font-semibold">30. 8. – 10. 9. 2025 (volná místa)</p></div>
+              <div class="col-span-2"><span class="text-gray-400">Termín</span><p class="font-semibold">Na vyžádání</p></div>
             </div>
             <div class="mb-5">
               <p class="text-gray-400 text-sm mb-1">Itinerář</p>
@@ -112,7 +161,7 @@
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
               <div><span class="text-gray-400">Cena</span><p class="font-semibold text-green-700">od 2 120 USD / osoba</p></div>
               <div><span class="text-gray-400">Skupina</span><p class="font-semibold">4–10 osob</p></div>
-              <div class="col-span-2"><span class="text-gray-400">Termíny</span><p class="font-semibold">13.–24. 8. 2025 | 2.–13. 9. 2025</p></div>
+              <div class="col-span-2"><span class="text-gray-400">Termíny</span><p class="font-semibold">Na vyžádání</p></div>
             </div>
             <div class="mb-5">
               <p class="text-gray-400 text-sm mb-1">Itinerář</p>
@@ -136,7 +185,7 @@
             <h3 class="text-2xl text-green-800 mb-1">Panama 16 dní</h3>
             <p class="text-gray-500 mb-4">Rozšířená verze – více času na každé místo</p>
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
-              <div><span class="text-gray-400">Cena</span><p class="font-semibold text-green-700">od 2 120 USD / osoba</p></div>
+              <div><span class="text-gray-400">Cena</span><p class="font-semibold text-green-700">od 2 782 USD / osoba</p></div>
               <div><span class="text-gray-400">Skupina</span><p class="font-semibold">4–10 osob</p></div>
             </div>
             <div class="mb-5">
@@ -154,7 +203,7 @@
         <!-- Nikaragua 12 dni -->
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
           <div class="relative h-64 overflow-hidden">
-            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000279-45cd845cfb/concepcion-1.png" alt="Nikaragua" class="w-full h-full object-cover" />
+            <img src="nikaragua-dsc-0135.jpg" alt="Nikaragua" class="w-full h-full object-cover" />
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Nikaragua</div>
           </div>
           <div class="p-8">
@@ -175,7 +224,7 @@
         <!-- Nikaragua 13 dni -->
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
           <div class="relative h-64 overflow-hidden">
-            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000279-45cd845cfb/concepcion-1.png" alt="Nikaragua" class="w-full h-full object-cover" />
+            <img src="nikaragua-13d-20260328.jpg" alt="Nikaragua" class="w-full h-full object-cover" />
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Nikaragua</div>
           </div>
           <div class="p-8">
@@ -196,7 +245,7 @@
         <!-- Nikaragua 15 dni -->
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
           <div class="relative h-64 overflow-hidden">
-            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000279-45cd845cfb/concepcion-1.png" alt="Nikaragua" class="w-full h-full object-cover" />
+            <img src="nikaragua-15d-20260403.jpg" alt="Nikaragua" class="w-full h-full object-cover" />
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Nikaragua</div>
           </div>
           <div class="p-8">
@@ -219,24 +268,27 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-16 bg-green-700 text-white">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <h2 class="text-3xl mb-4">Dovolená na míru</h2>
-      <p class="text-green-100 text-lg mb-8">Chcete výlet na 2 nebo 14 dní? Napište mi, nezávazně probereme možnosti.</p>
-      <a href="kontakt.html" class="inline-block bg-white text-green-700 font-bold px-8 py-3 rounded-full hover:bg-green-100 transition-colors">Napsat Martinovi</a>
+  <section class="py-10 bg-green-50">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-3xl text-green-800 mb-3">Dovolená na míru</h2>
+      <p class="text-gray-600 text-base mb-7">Chcete výlet na 2 nebo 14 dní? Napište mi, nezávazně probereme možnosti.</p>
+      <a href="kontakt.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Napsat Martinovi</a>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-gray-400 py-10">
+  <footer class="bg-green-700 text-green-100 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex gap-6 text-sm">
-          <a href="https://www.facebook.com/martinguia.cz" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
-          <a href="https://www.instagram.com/martinguia.cz" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
-          <a href="https://www.tiktok.com/@martinguia.cz" target="_blank" rel="noopener" class="hover:text-white transition-colors">TikTok</a>
+        <div class="flex flex-col gap-4 items-center md:items-start">
+                    <a href="https://buymeacoffee.com/martin_guia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold text-sm px-4 py-2 rounded-full transition-colors">☕ Podpořte Martina</a>
+          <div class="flex gap-6 text-sm">
+          <a href="https://www.facebook.com/Martin.pruvodce.Kostarika.Panama.Nikaragua" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a>
+          <a href="https://www.instagram.com/martin_guia_/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.youtube.com/@m.b.7343" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube</a>
+          </div>
         </div>
         <div class="text-sm text-center">
-          <span class="text-gray-500">© 2025 Martin Guía</span>
+          <span class="text-green-200">© 2026 Martin Guía</span>
           <span class="mx-2">·</span>
           <a href="mailto:info@martinguia.cz" class="hover:text-white transition-colors">info@martinguia.cz</a>
           <span class="mx-2">·</span>
@@ -245,5 +297,7 @@
       </div>
     </div>
   </footer>
+  <script src="cookie-consent.js" defer></script>
+  <script src="lang-switch.js" defer></script>
 </body>
 </html>
