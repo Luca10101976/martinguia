@@ -1,6 +1,12 @@
-/* Martin Guía – typografie a sdílené styly */
+/* Martin Guía – typografie
+ *
+ * Bitter 600 → obsahové nadpisy (stránky, sekce, názvy zájezdů, blog)
+ * Inter      → texty, perexy, ceny, tabulky, navigace, tlačítka, formuláře
+ *
+ * Rozhoduje význam prvku, ne barva textu.
+ */
 
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -22,10 +28,16 @@ body {
   color: var(--color-text);
 }
 
-/* Nadpisy – cestovatelský serif */
-h1, h2, h3, h4 {
+/* ── Bitter: obsahové nadpisy ── */
+h1,
+h2,
+h3,
+h4,
+.hero-title,
+.prose h2,
+.prose h3 {
   font-family: var(--font-serif);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1 {
@@ -49,10 +61,8 @@ h4 {
 }
 
 .hero-title {
-  font-family: var(--font-serif);
   font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   line-height: 1.15;
-  font-weight: 700;
 }
 
 .hero-lead {
@@ -62,8 +72,28 @@ h4 {
   font-weight: 400;
 }
 
-/* UI prvky – sans-serif */
-nav, button, label, input, select, textarea, table, th, td, .btn, footer {
+/* ── Inter: UI a informační prvky (přebíjí barvu / tučnost) ── */
+nav,
+nav a,
+nav button,
+button,
+.btn,
+label,
+input,
+select,
+textarea,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+caption,
+footer,
+footer a,
+footer p,
+footer li {
   font-family: var(--font-sans);
 }
 
@@ -71,7 +101,7 @@ table th {
   font-weight: 600;
 }
 
-/* Blog a dlouhé texty */
+/* ── Blog a dlouhé texty ── */
 .prose p {
   margin-bottom: 1.25rem;
   line-height: 1.8;
@@ -80,7 +110,6 @@ table th {
 
 .prose h2,
 .prose h3 {
-  font-family: var(--font-serif);
   color: var(--color-heading);
 }
 
@@ -108,7 +137,7 @@ table th {
   color: #6b7280;
 }
 
-/* Sdílené komponenty */
+/* ── Sdílené komponenty ── */
 .card-hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
