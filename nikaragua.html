@@ -24,19 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/nikaragua-dsc-0135.jpg" />
   <title>Nikaragua – průvodce, tipy a zájezdy – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-    .hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.55) 100%); }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -114,7 +103,7 @@
     <img src="nikaragua-dsc-0135.jpg" alt="Nikaragua" class="absolute inset-0 w-full h-full object-cover object-center" />
     <div class="hero-overlay absolute inset-0"></div>
     <div class="relative z-10 text-center text-white px-6">
-      <h1 class="text-4xl md:text-5xl drop-shadow">Nikaragua</h1>
+      <h1 class="hero-title drop-shadow">Nikaragua</h1>
       <p class="text-lg mt-3 text-green-100">Praktické tipy, zážitky a výlety z pohledu průvodce</p>
     </div>
   </section>
@@ -124,12 +113,12 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-10">
         <p class="text-xs text-gray-400 uppercase tracking-wide mb-2">21. 5. 2025</p>
-        <h2 class="text-3xl text-green-800 mb-6">Praktické informace – Nikaragua</h2>
+        <h2 class="text-green-800 mb-6">Praktické informace – Nikaragua</h2>
         <div class="prose prose-lg text-gray-700 space-y-4">
           <p>Je Nikaragua nebezpečná? Jak se tam cestuje? To jsou nejčastější otázky, které dostávám od zájemců o tuto destinaci. Odpovím upřímně – z pohledu průvodce, bez zbytečných kudrlinek.</p>
           <p>Nikaragua je zem sopek, jezero Managua, koloniálních měst jako Granada a León, a neobyčejné přírody. Ceny jsou nižší než v Kostarice, lidé srdečnější a turistů méně.</p>
           <p>Bezpečnost závisí na tom, kam jedete a jak se chováte. S průvodcem, který destinaci zná, je cestování bezpečné a nesmírně obohacující.</p>
-          <h3 class="text-xl text-green-800 mt-8 mb-3">Co navštívit</h3>
+          <h3 class="text-green-800 mt-8 mb-3">Co navštívit</h3>
           <ul class="list-disc pl-6 space-y-2">
             <li><strong>Granada</strong> – nejstarší koloniální město kontinentu, barevná architektura, jezero Nicaragua</li>
             <li><strong>León</strong> – kulturní centrum, univerzitní město, katedrála UNESCO</li>
@@ -137,7 +126,7 @@
             <li><strong>Ostrov Ometepe</strong> – dvě sopky na jezeře Nicaragua, ráj pro pěší turistiku</li>
             <li><strong>San Juan del Sur</strong> – surfařská vesnice na Pacifiku</li>
           </ul>
-          <h3 class="text-xl text-green-800 mt-8 mb-3">Praktické tipy</h3>
+          <h3 class="text-green-800 mt-8 mb-3">Praktické tipy</h3>
           <ul class="list-disc pl-6 space-y-2">
             <li>Měna: córdoba (NIO), USD jsou přijímány ve většině míst</li>
             <li>Nejlepší období: listopad–duben (suché období)</li>
@@ -148,7 +137,7 @@
       </div>
 
       <div class="mt-12 p-8 bg-green-50 rounded-2xl text-center">
-        <h3 class="text-2xl text-green-800 mb-3">Chcete jet do Nikaraguy?</h3>
+        <h3 class="text-green-800 mb-3">Chcete jet do Nikaraguy?</h3>
         <p class="text-gray-600 mb-6">Připravuji zájezdy na 12, 13 i 15 dní. Napište mi a probereme možnosti.</p>
         <a href="zajezdy.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors mr-4">Prohlédnout zájezdy</a>
         <a href="kontakt.html" class="inline-block border-2 border-green-700 text-green-700 font-semibold px-8 py-3 rounded-full hover:bg-green-700 hover:text-white transition-colors">Napsat Martinovi</a>
@@ -159,7 +148,7 @@
   <!-- BLOG ARTICLES -->
   <section class="py-16 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl text-green-800 mb-8">Články o Nikaragui</h2>
+      <h2 class="text-green-800 mb-8">Články o Nikaragui</h2>
       <div class="space-y-6">
         <a href="blog-nikaragua-prakticke.html" class="flex flex-col sm:flex-row gap-6 rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-sm group block" style="transition: transform 0.25s ease, box-shadow 0.25s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
           <div class="sm:w-64 flex-shrink-0 h-48 sm:h-auto overflow-hidden">
@@ -167,7 +156,7 @@
           </div>
           <div class="p-6 flex flex-col justify-center">
             <p class="text-green-700 text-xs font-semibold uppercase tracking-wide mb-2">21. 5. 2025</p>
-            <h3 class="text-xl text-green-800 mb-2 group-hover:underline">Praktické informace – Nikaragua</h3>
+            <h3 class="text-green-800 mb-2 group-hover:underline">Praktické informace – Nikaragua</h3>
             <p class="text-gray-500 text-sm">Letenky, ceny, měna, bezpečnost, očkování a doprava. Vše, co potřebujete vědět před cestou.</p>
           </div>
         </a>

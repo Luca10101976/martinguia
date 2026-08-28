@@ -24,18 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Propiedades en Costa Rica – alquiler y venta – Martin Guía (ES)</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -111,7 +101,7 @@
   <!-- HEADER -->
   <section class="py-16 bg-green-50 text-center">
     <div class="max-w-3xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">Tu pedazo de paraíso en Costa Rica</h1>
+      <h1 class="hero-title text-green-800 mb-4">Tu pedazo de paraíso en Costa Rica</h1>
       <p class="text-lg text-gray-600">Alquiler y venta de propiedades en Costa Rica. Te acompañamos desde la elección hasta la firma.</p>
     </div>
   </section>
@@ -131,7 +121,7 @@
             <span class="absolute top-3 left-3 bg-white/90 text-green-700 text-xs font-bold px-3 py-1 rounded-full">$35 / os / noche</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl text-green-800 mb-1">Casa Tucán</h3>
+            <h3 class="text-green-800 mb-1">Casa Tucán</h3>
             <p class="text-sm text-gray-500 mb-2">📍 Turrialba, Costa Rica</p>
             <p class="text-sm text-gray-600 mb-4">4 dormitorios · 8 personas · Internet 200 Mbps · Parrilla</p>
             <span class="text-sm font-semibold text-green-700 group-hover:underline">Más información →</span>
@@ -144,7 +134,7 @@
             <span class="absolute top-3 left-3 bg-white/90 text-green-700 text-xs font-bold px-3 py-1 rounded-full">1 300 USD / mes</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl text-green-800 mb-1">Casa Sucre</h3>
+            <h3 class="text-green-800 mb-1">Casa Sucre</h3>
             <p class="text-sm text-gray-500 mb-2">📍 San Carlos, Costa Rica</p>
             <p class="text-sm text-gray-600 mb-4">Alquiler de largo plazo · Internet + agua + electricidad incluidos</p>
             <span class="text-sm font-semibold text-green-700 group-hover:underline">Más información →</span>
@@ -157,7 +147,7 @@
             <span class="absolute top-3 left-3 bg-white/90 text-green-700 text-xs font-bold px-3 py-1 rounded-full">$24 / os / noche</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl text-green-800 mb-1">Kabinas Luna</h3>
+            <h3 class="text-green-800 mb-1">Kabinas Luna</h3>
             <p class="text-sm text-gray-500 mb-2">📍 Puerto Viejo, Caribe</p>
             <p class="text-sm text-gray-600 mb-4">3 habitaciones · Baños privados · A 10 min de la playa</p>
             <span class="text-sm font-semibold text-green-700 group-hover:underline">Más información →</span>
@@ -170,7 +160,7 @@
             <span class="absolute top-3 left-3 bg-white/90 text-green-700 text-xs font-bold px-3 py-1 rounded-full">Precio a consultar</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl text-green-800 mb-1">Real Cabecar</h3>
+            <h3 class="text-green-800 mb-1">Real Cabecar</h3>
             <p class="text-sm text-gray-500 mb-2">📍 Grano de Oro, Costa Rica</p>
             <p class="text-sm text-gray-600 mb-4">Zona montañosa tranquila · Entorno auténtico</p>
             <span class="text-sm font-semibold text-green-700 group-hover:underline">Más información →</span>
@@ -196,7 +186,7 @@
             <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">$595 000</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl text-green-800 mb-1">Tres cabañas en el corazón de la selva</h3>
+            <h3 class="text-green-800 mb-1">Tres cabañas en el corazón de la selva</h3>
             <p class="text-sm text-gray-500 mb-2">📍 Puerto Viejo, Caribe</p>
             <p class="text-sm text-gray-600 mb-4">3 cabañas · Airbnb en funcionamiento · Junto al río Negro</p>
             <span class="text-sm font-semibold text-green-700 group-hover:underline">Más información →</span>
@@ -209,7 +199,7 @@
             <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">$750 000</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl text-green-800 mb-1">Terreno con vista al volcán</h3>
+            <h3 class="text-green-800 mb-1">Terreno con vista al volcán</h3>
             <p class="text-sm text-gray-500 mb-2">📍 Santa Cruz de Turrialba</p>
             <p class="text-sm text-gray-600 mb-4">55 180 m² · Vista al volcán · Selva tropical</p>
             <span class="text-sm font-semibold text-green-700 group-hover:underline">Más información →</span>
@@ -223,7 +213,7 @@
   <!-- CTA -->
   <section class="py-10 bg-green-50 text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h2 class="text-3xl text-green-800 mb-3">¿Interesado en una propiedad en Costa Rica?</h2>
+      <h2 class="text-green-800 mb-3">¿Interesado en una propiedad en Costa Rica?</h2>
       <p class="text-gray-600 text-base mb-7">Te ayudamos con la selección, la visita y todo el respaldo legal. Contamos con abogados en Costa Rica.</p>
       <a href="kontakt-es.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Escribir a Martin</a>
     </div>

@@ -1,0 +1,151 @@
+/* Martin Guía – typografie a sdílené styly */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --font-sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --color-text: #1f2937;
+  --color-heading: #14532d;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+/* Nadpisy – cestovatelský serif */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.12;
+}
+
+h2 {
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.28;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+/* Velký hero na úvodní stránce a destinacích */
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.hero-lead {
+  font-family: var(--font-sans);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* UI prvky – sans-serif */
+nav, button, label, input, select, textarea, table, th, td, .btn, footer {
+  font-family: var(--font-sans);
+}
+
+table th {
+  font-weight: 600;
+}
+
+/* Blog a dlouhé texty */
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.prose h2,
+.prose h3 {
+  font-family: var(--font-serif);
+  color: var(--color-heading);
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.prose blockquote {
+  border-left: 4px solid #15803d;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* Sdílené komponenty */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  z-index: 50;
+}
+
+.nav-dropdown-wrapper:hover .nav-dropdown,
+.nav-dropdown-wrapper:focus-within .nav-dropdown {
+  display: block;
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(0, 40, 0, 0.1) 0%, rgba(0, 30, 0, 0.45) 100%);
+}
+
+.hero-overlay-dark {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.star {
+  color: #facc15;
+}

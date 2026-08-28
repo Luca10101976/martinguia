@@ -24,18 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Blog – Sobre destinos – Martin Guía (ES)</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -114,7 +104,7 @@
 
   <section class="py-16 bg-green-50 text-center">
     <div class="max-w-3xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">Sobre destinos</h1>
+      <h1 class="hero-title text-green-800 mb-4">Sobre destinos</h1>
       <p class="text-lg text-gray-600">Guías, consejos e historias de Centroamérica directamente de Martin</p>
     </div>
   </section>
@@ -129,7 +119,7 @@
           </div>
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 28. 1. 2026</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Calzado para selva y playa</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Calzado para selva y playa</h3>
             <p class="text-sm text-gray-600">¿Zapatillas de trekking ligeras o botas? Qué necesitas de verdad y qué dejar en casa.</p>
           </div>
         </a>
@@ -138,7 +128,7 @@
           <img src="kostarika-prakticke-hero.jpg" alt="Información práctica Costa Rica" class="w-full h-44 object-cover" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 21. 5. 2025</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Información práctica – Costa Rica</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Información práctica – Costa Rica</h3>
             <p class="text-sm text-gray-600">Precios, transporte, clima, salud y seguridad. Todo lo que necesitas saber antes de viajar.</p>
           </div>
         </a>
@@ -147,7 +137,7 @@
           <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000508-c3589c358c/IMG_20230419_155318%2018.15.44.jpeg" alt="Pláže Kostariky" class="w-full h-44 object-cover" onerror="this.parentElement.classList.add('bg-green-800'); this.remove();" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 10. 6. 2025</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Caribe vs. Pacífico – playas</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Caribe vs. Pacífico – playas</h3>
             <p class="text-sm text-gray-600">Dos caras de Costa Rica. Qué costa te enamora más? Depende de lo que busques.</p>
           </div>
         </a>
@@ -156,7 +146,7 @@
           <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000351-2a24b2a24e/IMG_20241121_062559-8.jpeg" alt="Parques nacionales de Costa Rica" class="w-full h-44 object-cover" onerror="this.parentElement.classList.add('bg-green-700'); this.remove();" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 27. 5. 2025</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Parques nacionales de Costa Rica</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Parques nacionales de Costa Rica</h3>
             <p class="text-sm text-gray-600">Manuel Antonio, Tortuguero, Arenal, Corcovado. ¿Qué parques merecen más la visita?</p>
           </div>
         </a>
@@ -165,7 +155,7 @@
           <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000335-7246f72470/481083200_659977296416133_6150539173394769560_n.jpeg" alt="Tortugas marinas en Tortuguero" class="w-full h-44 object-cover" onerror="this.parentElement.classList.add('bg-green-900'); this.remove();" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 26. 5. 2025</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Milagro nocturno: desove de tortugas</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Milagro nocturno: desove de tortugas</h3>
             <p class="text-sm text-gray-600">Medianoche en Tortuguero: una gran tortuga sale del mar y sube a la arena para dejar sus huevos.</p>
           </div>
         </a>
@@ -174,7 +164,7 @@
           <img src="kostarika-obchody-hero.jpg" alt="Mercado local y precios en Costa Rica" class="w-full h-44 object-cover" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 23. 5. 2024</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Tiendas locales, precios y gastronomía</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Tiendas locales, precios y gastronomía</h3>
             <p class="text-sm text-gray-600">Panadería, pulpería y sodas. Cómo comprar y comer en Costa Rica como un local.</p>
           </div>
         </a>
@@ -183,7 +173,7 @@
           <img src="kostarika-zacatky-hero.jpg" alt="Mis comienzos en Costa Rica" class="w-full h-44 object-cover" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 14. 9. 2023</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Mis comienzos en Costa Rica</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Mis comienzos en Costa Rica</h3>
             <p class="text-sm text-gray-600">Cómo llegué sin español y descubrí que Costa Rica me cambió la vida. La historia de Martin.</p>
           </div>
         </a>
@@ -192,7 +182,7 @@
           <img src="kostarika-kava-hero.jpg" alt="Historia del paraíso del café y el banano" class="w-full h-44 object-cover" />
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Costa Rica · 26. 3. 2023</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Historia del paraíso del café y el banano</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Historia del paraíso del café y el banano</h3>
             <p class="text-sm text-gray-600">Cómo Costa Rica se convirtió en el primer país de Centroamérica en exportar café y banano al mundo.</p>
           </div>
         </a>
@@ -203,7 +193,7 @@
           </div>
           <div class="p-6">
             <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Nicaragua · 21. 5. 2025</span>
-            <h3 class="text-xl text-green-800 mt-2 mb-2 group-hover:underline">Información práctica – Nicaragua</h3>
+            <h3 class="text-green-800 mt-2 mb-2 group-hover:underline">Información práctica – Nicaragua</h3>
             <p class="text-sm text-gray-600">Vuelos, precios, seguridad, Granada, León y volcán Masaya. Una joya poco conocida de Centroamérica.</p>
           </div>
         </a>
@@ -214,7 +204,7 @@
 
   <section class="py-10 bg-green-50 text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h2 class="text-3xl text-green-800 mb-3">¿Planeas un viaje a Costa Rica?</h2>
+      <h2 class="text-green-800 mb-3">¿Planeas un viaje a Costa Rica?</h2>
       <p class="text-gray-600 text-base mb-7">Escríbenos y prepararemos un itinerario totalmente a tu medida.</p>
       <a href="kontakt-es.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Escribir a Martin</a>
     </div>

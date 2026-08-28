@@ -24,16 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Reference – co říkají naši klienti – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -116,7 +108,7 @@
 
   <section class="py-16 bg-green-50 text-center">
     <div class="max-w-3xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">Co říkají cestovatelé</h1>
+      <h1 class="hero-title text-green-800 mb-4">Co říkají cestovatelé</h1>
       <p class="text-lg text-gray-600">Skutečné zkušenosti lidí, kteří cestovali s Martinem</p>
     </div>
   </section>
@@ -203,7 +195,7 @@
 
   <section class="py-10 bg-green-50 text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h2 class="text-3xl text-green-800 mb-3">Přidejte se k nim</h2>
+      <h2 class="text-green-800 mb-3">Přidejte se k nim</h2>
       <p class="text-gray-600 text-base mb-7">Napište nám a připravíme cestu přesně pro vás.</p>
       <a href="kontakt.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Napsat Martinovi</a>
     </div>

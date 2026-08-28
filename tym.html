@@ -24,18 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Náš tým – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -112,7 +102,7 @@
 
   <section class="py-16 bg-green-50 text-center">
     <div class="max-w-3xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl text-green-800 mb-4">Náš tým</h1>
+      <h1 class="hero-title text-green-800 mb-4">Náš tým</h1>
       <p class="text-lg text-gray-600">Lidé, kteří vám pomůžou s cestou i nemovitostí v Kostarice</p>
     </div>
   </section>
@@ -123,7 +113,7 @@
 
         <div class="bg-white rounded-2xl shadow-sm card-hover border border-gray-100 p-6 text-center">
           <img src="martin.webp" alt="Martin" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="text-xl text-green-800 mb-1">Martin</h3>
+          <h3 class="text-green-800 mb-1">Martin</h3>
           <p class="text-sm text-green-600 font-semibold mb-3">Průvodce na cestách</p>
           <p class="text-sm text-gray-600 mb-4">Váš průvodce po Kostarice, Panamě a Nikaragui. Mluví česky a španělsky, zná destinace jako svůj druhý domov.</p>
           <a href="tel:+50686755419" class="text-sm text-gray-500 hover:text-green-700">+506 8675 5419</a>
@@ -131,7 +121,7 @@
 
         <div class="bg-white rounded-2xl shadow-sm card-hover border border-gray-100 p-6 text-center">
           <img src="evelyn.webp" alt="Evelyn Castillo" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="text-xl text-green-800 mb-1">Evelyn Castillo Ureňa</h3>
+          <h3 class="text-green-800 mb-1">Evelyn Castillo Ureňa</h3>
           <p class="text-sm text-green-600 font-semibold mb-3">Podpora ve španělském jazyce</p>
           <p class="text-sm text-gray-600 mb-4">Rodilá Kostaričanka, zajistí komunikaci se španělsky mluvícími partnery a institucemi.</p>
           <a href="tel:+50672650981" class="text-sm text-gray-500 hover:text-green-700">+506 7265 0981</a>
@@ -139,7 +129,7 @@
 
         <div class="bg-white rounded-2xl shadow-sm card-hover border border-gray-100 p-6 text-center">
           <img src="tomáš.webp" alt="Tomáš Toběrný" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="text-xl text-green-800 mb-1">Tomáš Toběrný</h3>
+          <h3 class="text-green-800 mb-1">Tomáš Toběrný</h3>
           <p class="text-sm text-green-600 font-semibold mb-3">Zástupce v ČR a SK</p>
           <p class="text-sm text-gray-600 mb-4">Váš kontakt v České a Slovenské republice. Pomůže s organizací před odjezdem i po návratu.</p>
           <a href="tel:+420777029922" class="text-sm text-gray-500 hover:text-green-700">+420 777 029 922</a>
@@ -147,7 +137,7 @@
 
         <div class="bg-white rounded-2xl shadow-sm card-hover border border-gray-100 p-6 text-center">
           <img src="felipe.webp" alt="Felipe Saenz" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="text-xl text-green-800 mb-1">Felipe Saenz Corolla</h3>
+          <h3 class="text-green-800 mb-1">Felipe Saenz Corolla</h3>
           <p class="text-sm text-green-600 font-semibold mb-3">Advokát a notář</p>
           <p class="text-sm text-gray-600 mb-4">Právní zajištění nemovitostních transakcí v Kostarice. Specialista na kupní smlouvy a notářské úkony.</p>
           <a href="tel:+50660141560" class="text-sm text-gray-500 hover:text-green-700">+506 6014 1560</a>
@@ -155,14 +145,14 @@
 
         <div class="bg-white rounded-2xl shadow-sm card-hover border border-gray-100 p-6 text-center">
           <img src="oskar.webp" alt="Óscar Ugalde" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="text-xl text-green-800 mb-1">Óscar Ugalde López</h3>
+          <h3 class="text-green-800 mb-1">Óscar Ugalde López</h3>
           <p class="text-sm text-green-600 font-semibold mb-3">Advokát a notář</p>
           <p class="text-sm text-gray-600 mb-4">Zkušený právník v oblasti kostarického nemovitostního práva. Pomáhá zahraničním kupcům.</p>
           <a href="tel:+50686787609" class="text-sm text-gray-500 hover:text-green-700">+506 8678 7609</a>
         </div>
 
         <div class="bg-white rounded-2xl shadow-sm card-hover border border-gray-100 p-6 text-center">
-          <h3 class="text-xl text-green-800 mb-1">Lucie</h3>
+          <h3 class="text-green-800 mb-1">Lucie</h3>
           <p class="text-sm text-green-600 font-semibold mb-3">Marketing & Komunikace</p>
           <p class="text-sm text-gray-600 mb-4">Stará se o online prezentaci, komunikaci se zákazníky a správu webu a sociálních sítí.</p>
           <a href="mailto:info@martinguia.cz" class="text-sm text-gray-500 hover:text-green-700">info@martinguia.cz</a>

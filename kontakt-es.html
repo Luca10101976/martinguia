@@ -24,16 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Contacto – Martin Guía (ES)</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -115,13 +107,13 @@
 
   <section class="py-16 bg-green-50">
     <div class="max-w-3xl mx-auto px-4 text-center">
-      <h1 class="text-3xl md:text-4xl text-green-800 mb-3">Escribe a Martin</h1>
+      <h1 class="hero-title text-green-800 mb-3">Escribe a Martin</h1>
       <p class="text-gray-500 text-base mb-10">Consulta gratuita sin compromiso · Respuesta en 24 horas</p>
       <div id="contact-status" class="hidden mb-6 rounded-xl px-4 py-3 text-sm font-semibold"></div>
 
       <div class="text-left bg-white rounded-2xl border border-green-200 p-6 md:p-8 mb-8">
         <p class="text-green-700 text-sm uppercase tracking-wide font-semibold mb-2">Contacto recomendado</p>
-        <h2 class="text-2xl text-green-800 mb-3">Lo más rápido es WhatsApp o teléfono</h2>
+        <h2 class="text-green-800 mb-3">Lo más rápido es WhatsApp o teléfono</h2>
         <p class="text-gray-600 mb-6">Si quieres una respuesta rápida, escribe a Martin por WhatsApp. Para consultas más detalladas, usa el correo.</p>
         <div class="space-y-3">
           <a href="https://wa.me/50686755419?text=Hola%2C%20me%20interesa%20un%20viaje%20a%20Costa%20Rica." target="_blank" rel="noopener" class="block w-full text-center bg-green-700 text-white font-bold py-3 rounded-full hover:bg-green-800 transition-colors">WhatsApp Martin (+506 8675 5419)</a>
@@ -133,7 +125,7 @@
       </div>
 
       <div class="text-left bg-white rounded-2xl border border-gray-200 p-6 md:p-8">
-        <h2 class="text-2xl text-green-800 mb-3">O escríbenos por el formulario</h2>
+        <h2 class="text-green-800 mb-3">O escríbenos por el formulario</h2>
         <p class="text-gray-600 mb-6">El formulario es una opción alternativa. Respondemos lo antes posible.</p>
         <form class="space-y-4" action="/api/contact" method="POST">
           <input type="hidden" name="source" value="kontakt-es.html" />

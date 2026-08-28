@@ -24,16 +24,8 @@
   <meta name="twitter:image" content="https://www.martinguia.cz/logo.png" />
   <title>Zájezdy do Kostariky, Panamy a Nikaraguy – Martin Guía</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Open Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 180px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 50; }
-    .nav-dropdown-wrapper:hover .nav-dropdown { display: block; }
-    .nav-dropdown-wrapper:focus-within .nav-dropdown { display: block; }
-  </style>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -112,7 +104,7 @@
   <!-- PAGE HEADER -->
   <section class="bg-green-50 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-5xl text-green-800 mb-4">Dobrodružné zájezdy do Panamy, Kostariky a Nikaragui</h1>
+      <h1 class="hero-title text-green-800 mb-4">Dobrodružné zájezdy do Panamy, Kostariky a Nikaragui</h1>
       <p class="text-xl text-gray-600 mb-4">S respektem a úctou k přírodě i lidem</p>
       <p class="text-gray-500">Ceny platí od února 2027. Kalkulace pro skupinu 6 osob</p>
       <p class="text-gray-500 text-sm mt-1">V případě menší skupiny dojde k úpravě ceny.</p>
@@ -122,7 +114,7 @@
   <!-- SEZÓNNOST -->
   <section class="py-10 bg-white border-b border-gray-100">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl text-green-800 mb-3 text-center">Kdy platí která cena?</h2>
+      <h2 class="text-green-800 mb-3 text-center">Kdy platí která cena?</h2>
       <p class="text-gray-600 text-center mb-6 max-w-2xl mx-auto">U každého zájezdu jsou dvě ceny — vyšší v hlavní sezóně a nižší mimo ni. Termíny odpovídají suché sezóně, kdy je cestování nejpříjemnější.</p>
       <div class="overflow-x-auto">
         <table class="w-full text-sm text-left border border-gray-200 rounded-xl overflow-hidden">
@@ -155,7 +147,7 @@
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Kostarika Pacifik</div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl text-green-800 mb-1">Kostarika 16 dní / 15 nocí</h3>
+            <h3 class="text-green-800 mb-1">Kostarika 16 dní / 15 nocí</h3>
             <p class="text-gray-500 mb-4">Pacifik, sopky, prales i termální prameny</p>
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
               <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 3 150 USD / osoba</p></div>
@@ -183,7 +175,7 @@
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Kostarika Karibik</div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl text-green-800 mb-1">Kostarika – karibská část 14 dní / 13 nocí</h3>
+            <h3 class="text-green-800 mb-1">Kostarika – karibská část 14 dní / 13 nocí</h3>
             <p class="text-gray-500 mb-4">Tortuguero, karibské pláže, Arenal a Tárcoles</p>
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
               <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 2 550 USD / osoba</p></div>
@@ -210,7 +202,7 @@
             <div class="absolute top-4 left-4 bg-amber-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Panama · akční termín</div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl text-green-800 mb-1">Panama 14 dní / 13 nocí</h3>
+            <h3 class="text-green-800 mb-1">Panama 14 dní / 13 nocí</h3>
             <p class="text-gray-500 mb-4">Emberá, Guna Yala, Colón, Portobelo, El Valle de Antón, Panama City</p>
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
               <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 2 200 USD / osoba</p></div>
@@ -237,7 +229,7 @@
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Nikaragua</div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl text-green-800 mb-1">Nikaragua 16 dní / 15 nocí</h3>
+            <h3 class="text-green-800 mb-1">Nikaragua 16 dní / 15 nocí</h3>
             <p class="text-gray-500 mb-4">Corn Islands, Somoto, Granada, León, Ometepe</p>
             <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
               <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 2 700 USD / osoba</p><p class="text-xs text-gray-400">květen–listopad</p></div>
@@ -269,7 +261,7 @@
   <!-- CTA -->
   <section class="py-10 bg-green-50">
     <div class="max-w-2xl mx-auto px-4 text-center">
-      <h2 class="text-3xl text-green-800 mb-3">Dovolená na míru</h2>
+      <h2 class="text-green-800 mb-3">Dovolená na míru</h2>
       <p class="text-gray-600 text-base mb-7">Chcete výlet na 2 nebo 14 dní? Napište mi, nezávazně probereme možnosti.</p>
       <a href="kontakt.html" class="inline-block bg-green-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition-colors shadow-sm">Napsat Martinovi</a>
     </div>
