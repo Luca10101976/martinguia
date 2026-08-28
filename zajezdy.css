@@ -1,0 +1,172 @@
+/* Stránka Zájezdy – karty zájezdů a rytmus sekce (pouze zajezdy.html) */
+
+/* ── 1. Karta ── */
+.tour-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card__media {
+  height: clamp(13.75rem, 60vw, 15rem); /* 220–240 px */
+}
+
+@media (min-width: 768px) {
+  .tour-card__media {
+    height: clamp(15rem, 22vw, 20rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .tour-card__media {
+    height: 20rem; /* 320 px */
+  }
+}
+
+.tour-card__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Vyšší ořez odkrývá jinou část kompozice než původních 256 px. */
+.tour-card__img--pacifik {
+  object-position: center 42%; /* loď zůstává celá v záběru */
+}
+
+.tour-card__img--nikaragua {
+  object-position: center 30%; /* kopule místo betonového popředí */
+}
+
+.tour-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1.25rem; /* 20 px */
+}
+
+@media (min-width: 768px) {
+  .tour-card__body {
+    padding: 1.5rem; /* 24 px */
+  }
+}
+
+/* ── 2. Ceny a technické údaje ── */
+.tour-card__facts {
+  column-gap: 1rem;
+  row-gap: 0.875rem;
+}
+
+.tour-fact__label {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .tour-fact__label {
+    font-size: 0.8125rem;
+  }
+}
+
+.tour-fact__price {
+  font-size: clamp(1.125rem, 2.2vw + 0.6rem, 1.3125rem); /* 18–21 px */
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0.125rem;
+}
+
+.tour-fact__value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #374151;
+  margin-top: 0.125rem;
+}
+
+.tour-fact__season {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: #6b7280;
+}
+
+/* ── 3. Trasa, zahrnuté služby, program ── */
+.tour-card__label {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.tour-card__text {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #4b5563;
+}
+
+.tour-card__note {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* ── 4. CTA vždy u spodní hrany karty ── */
+.tour-card__cta {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 0.9375rem;
+  padding: 0.5625rem 1.5rem;
+}
+
+/* ── 5. Rytmus sekce ── */
+.tours-section {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* ── 6. Sezónnost ── */
+.season-note {
+  padding-top: 2rem;
+  padding-bottom: 1.75rem;
+}
+
+.season-note__title {
+  margin-bottom: 1rem;
+}
+
+.season-note__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+@media (min-width: 480px) {
+  .season-note__grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+.season-note__label {
+  display: block;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: #6b7280;
+}
+
+.season-note__value {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #374151;
+  margin-top: 0.125rem;
+}
+
+.season-note__hint {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #6b7280;
+}

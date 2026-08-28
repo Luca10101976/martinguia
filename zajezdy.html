@@ -26,6 +26,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind-config.js"></script>
   <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="zajezdy.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -107,156 +108,145 @@
       <h1 class="page-hero__title text-green-800">Dobrodružné zájezdy do Panamy, Kostariky a Nikaragui</h1>
       <p class="page-hero__slogan text-gray-600">S respektem a úctou k přírodě i lidem</p>
       <div class="page-hero__meta">
-        <p class="page-hero__info text-gray-500">Ceny platí od února 2027. Kalkulace pro skupinu 6 osob</p>
-        <p class="page-hero__info-note text-gray-500">V případě menší skupiny dojde k úpravě ceny.</p>
+        <p class="page-hero__info text-gray-500">Ceny platí od února 2027.</p>
       </div>
     </div>
   </section>
 
   <!-- SEZÓNNOST -->
-  <section class="py-10 bg-white border-b border-gray-100">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-green-800 mb-3 text-center">Kdy platí která cena?</h2>
-      <p class="text-gray-600 text-center mb-6 max-w-2xl mx-auto">U každého zájezdu jsou dvě ceny — vyšší v hlavní sezóně a nižší mimo ni.</p>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm text-left border border-gray-200 rounded-xl overflow-hidden">
-          <thead class="bg-green-50 text-green-900">
-            <tr>
-              <th class="px-4 py-3 font-semibold">Zájezd</th>
-              <th class="px-4 py-3 font-semibold">Vyšší cena (hlavní sezóna)</th>
-              <th class="px-4 py-3 font-semibold">Nižší cena (mimo sezónu)</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100">
-            <tr><td class="px-4 py-3">🇨🇷 Kostarika Pacifik · Karibik</td><td class="px-4 py-3">prosinec–duben</td><td class="px-4 py-3">květen–listopad</td></tr>
-            <tr class="bg-gray-50"><td class="px-4 py-3">🇵🇦 Panama</td><td class="px-4 py-3">prosinec–duben</td><td class="px-4 py-3">květen–listopad</td></tr>
-            <tr><td class="px-4 py-3">🇳🇮 Nikaragua</td><td class="px-4 py-3">prosinec–duben</td><td class="px-4 py-3">květen–listopad</td></tr>
-          </tbody>
-        </table>
+  <section class="season-note bg-white border-b border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="season-note__title text-green-800">Kdy platí která cena?</h2>
+      <div class="season-note__grid">
+        <div>
+          <span class="season-note__label">Hlavní sezóna</span>
+          <p class="season-note__value">prosinec až duben</p>
+        </div>
+        <div>
+          <span class="season-note__label">Mimo hlavní sezónu</span>
+          <p class="season-note__value">květen až listopad</p>
+        </div>
       </div>
+      <p class="season-note__hint">Ceny jsou kalkulované pro skupinu 6 osob. Při menším počtu cestujících se cena upraví.</p>
     </div>
   </section>
 
   <!-- ZAJEZDY GRID -->
-  <section class="py-16 bg-white">
+  <section class="tours-section bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         <!-- Kostarika 16 dní -->
-        <div class="rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
-          <div class="relative h-64 overflow-hidden">
-            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000351-2a24b2a24e/IMG_20241121_062559-8.jpeg" alt="Kostarika – sopka Arenal" class="w-full h-full object-cover" />
+        <div class="tour-card rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+          <div class="relative tour-card__media overflow-hidden">
+            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000351-2a24b2a24e/IMG_20241121_062559-8.jpeg" alt="Kostarika – sopka Arenal" class="tour-card__img tour-card__img--pacifik w-full h-full" />
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Kostarika Pacifik</div>
           </div>
-          <div class="p-8">
+          <div class="tour-card__body">
             <h3 class="text-green-800 mb-1">Kostarika 16 dní / 15 nocí</h3>
             <p class="text-gray-500 mb-4">Pacifik, sopky, prales i termální prameny</p>
-            <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
-              <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 3 150 USD / osoba</p></div>
-              <div><span class="text-gray-400">Hlavní sezóna</span><p class="font-semibold text-green-700">od 3 600 USD / osoba</p></div>
-              <div><span class="text-gray-400">Skupina</span><p class="font-semibold">6 osob</p></div>
-              <div><span class="text-gray-400">Platí od</span><p class="font-semibold">únor 2027</p></div>
+            <div class="tour-card__facts grid grid-cols-2 mb-5">
+              <div><span class="tour-fact__label">Mimo hlavní sezónu</span><p class="tour-fact__price text-green-700">od 3 150 USD / osoba</p></div>
+              <div><span class="tour-fact__label">Hlavní sezóna</span><p class="tour-fact__price text-green-700">od 3 600 USD / osoba</p></div>
+              <div><span class="tour-fact__label">Skupina</span><p class="tour-fact__value">6 osob</p></div>
+              <div><span class="tour-fact__label">Platí od</span><p class="tour-fact__value">únor 2027</p></div>
             </div>
             <div class="mb-4">
-              <p class="text-gray-400 text-sm mb-1">Trasa</p>
-              <p class="text-gray-600 text-sm">SJO → Tárcoles → Manuel Antonio → Uvita → Llano de Cortés → Rincón de la Vieja → La Fortuna / Arenal → Grecia → SJO</p>
+              <p class="tour-card__label">Trasa</p>
+              <p class="tour-card__text">SJO → Tárcoles → Manuel Antonio → Uvita → Llano de Cortés → Rincón de la Vieja → La Fortuna / Arenal → Grecia → SJO</p>
             </div>
             <div class="mb-6">
-              <p class="text-gray-400 text-sm mb-1">Zahrnuto v ceně</p>
-              <p class="text-gray-600 text-sm">15 nocí ubytování, auto a průvodce 16 dní, benzín, parkování a mýtné, transfery na letiště, Tárcoles, Manuel Antonio, Marino Ballena, Nauyaca, Llanos de Cortés, Rincón de la Vieja, Arenal, termální prameny Los Lagos, daň, pojištění</p>
-              <p class="text-gray-500 text-xs mt-2">Strava, letenky a volitelné aktivity (visuté mosty, zipline, La Fortuna aj.) nejsou v ceně.</p>
+              <p class="tour-card__label">Zahrnuto v ceně</p>
+              <p class="tour-card__text">15 nocí ubytování, auto a průvodce 16 dní, benzín, parkování a mýtné, transfery na letiště, Tárcoles, Manuel Antonio, Marino Ballena, Nauyaca, Llanos de Cortés, Rincón de la Vieja, Arenal, termální prameny Los Lagos, daň, pojištění</p>
+              <p class="tour-card__note">Strava, letenky a volitelné aktivity (visuté mosty, zipline, La Fortuna aj.) nejsou v ceně.</p>
             </div>
-            <a href="kontakt.html" class="inline-block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition-colors text-sm font-semibold">Mám zájem</a>
+            <a href="kontakt.html" class="tour-card__cta inline-block bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors font-semibold">Mám zájem</a>
           </div>
         </div>
 
         <!-- Kostarika Karibik 14 dní -->
-        <div class="rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
-          <div class="relative h-64 overflow-hidden">
-            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000508-c3589c358c/IMG_20230419_155318%2018.15.44.jpeg" alt="Kostarika – karibská část" class="w-full h-full object-cover" />
+        <div class="tour-card rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+          <div class="relative tour-card__media overflow-hidden">
+            <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000508-c3589c358c/IMG_20230419_155318%2018.15.44.jpeg" alt="Kostarika – karibská část" class="tour-card__img w-full h-full" />
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Kostarika Karibik</div>
           </div>
-          <div class="p-8">
+          <div class="tour-card__body">
             <h3 class="text-green-800 mb-1">Kostarika – karibská část 14 dní / 13 nocí</h3>
             <p class="text-gray-500 mb-4">Tortuguero, karibské pláže, Arenal a Tárcoles</p>
-            <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
-              <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 2 550 USD / osoba</p></div>
-              <div><span class="text-gray-400">Hlavní sezóna</span><p class="font-semibold text-green-700">od 2 900 USD / osoba</p></div>
-              <div><span class="text-gray-400">Skupina</span><p class="font-semibold">6 osob</p></div>
-              <div><span class="text-gray-400">Platí od</span><p class="font-semibold">únor 2027</p></div>
+            <div class="tour-card__facts grid grid-cols-2 mb-5">
+              <div><span class="tour-fact__label">Mimo hlavní sezónu</span><p class="tour-fact__price text-green-700">od 2 550 USD / osoba</p></div>
+              <div><span class="tour-fact__label">Hlavní sezóna</span><p class="tour-fact__price text-green-700">od 2 900 USD / osoba</p></div>
+              <div><span class="tour-fact__label">Skupina</span><p class="tour-fact__value">6 osob</p></div>
+              <div><span class="tour-fact__label">Platí od</span><p class="tour-fact__value">únor 2027</p></div>
             </div>
             <div class="mb-4">
-              <p class="text-gray-400 text-sm mb-1">Trasa</p>
-              <p class="text-gray-600 text-sm">SJO → Turrialba → Irazú → Cartago → Limón → Puerto Viejo → Cahuita → Manzanillo / Gandoca → La Pavona → Tortuguero → La Fortuna / Arenal → Tárcoles → San José → SJO</p>
+              <p class="tour-card__label">Trasa</p>
+              <p class="tour-card__text">SJO → Turrialba → Irazú → Cartago → Limón → Puerto Viejo → Cahuita → Manzanillo / Gandoca → La Pavona → Tortuguero → La Fortuna / Arenal → Tárcoles → San José → SJO</p>
             </div>
             <div class="mb-6">
-              <p class="text-gray-400 text-sm mb-1">Program zahrnuje mimo jiné</p>
-              <p class="text-gray-600 text-sm">Coffee Tour Turrialba, Irazú, karibské pláže, Tortuguero, sopka Arenal, krokodýlí řeka Tárcoles, San José</p>
+              <p class="tour-card__label">Program zahrnuje mimo jiné</p>
+              <p class="tour-card__text">Coffee Tour Turrialba, Irazú, karibské pláže, Tortuguero, sopka Arenal, krokodýlí řeka Tárcoles, San José</p>
             </div>
-            <a href="kontakt.html" class="inline-block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition-colors text-sm font-semibold">Mám zájem</a>
+            <a href="kontakt.html" class="tour-card__cta inline-block bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors font-semibold">Mám zájem</a>
           </div>
         </div>
 
         <!-- Panama 14 dní -->
-        <div class="rounded-2xl overflow-hidden shadow-lg card-hover border-2 border-amber-300 ring-2 ring-amber-100">
-          <div class="relative h-64 overflow-hidden">
-            <img src="panama-prakticke-hero.jpg" alt="Panama" class="w-full h-full object-cover" />
+        <div class="tour-card rounded-2xl overflow-hidden shadow-lg card-hover border-2 border-amber-300 ring-2 ring-amber-100">
+          <div class="relative tour-card__media overflow-hidden">
+            <img src="panama-prakticke-hero.jpg" alt="Panama" class="tour-card__img w-full h-full" />
             <div class="absolute top-4 left-4 bg-amber-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Panama · akční termín</div>
           </div>
-          <div class="p-8">
+          <div class="tour-card__body">
             <h3 class="text-green-800 mb-1">Panama 14 dní / 13 nocí</h3>
             <p class="text-gray-500 mb-4">Emberá, Guna Yala, Colón, Portobelo, El Valle de Antón, Panama City</p>
-            <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
-              <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 2 200 USD / osoba</p></div>
-              <div><span class="text-gray-400">Hlavní sezóna</span><p class="font-semibold text-green-700">od 2 300 USD / osoba</p></div>
-              <div><span class="text-gray-400">Skupina</span><p class="font-semibold">6 osob</p></div>
-              <div><span class="text-gray-400">Kapacita</span><p class="font-semibold">až 15 osob</p></div>
+            <div class="tour-card__facts grid grid-cols-2 mb-5">
+              <div><span class="tour-fact__label">Mimo hlavní sezónu</span><p class="tour-fact__price text-green-700">od 2 200 USD / osoba</p></div>
+              <div><span class="tour-fact__label">Hlavní sezóna</span><p class="tour-fact__price text-green-700">od 2 300 USD / osoba</p></div>
+              <div><span class="tour-fact__label">Skupina</span><p class="tour-fact__value">6 osob</p></div>
+              <div><span class="tour-fact__label">Kapacita</span><p class="tour-fact__value">až 15 osob</p></div>
             </div>
             <div class="mb-4">
-              <p class="text-gray-400 text-sm mb-1">Trasa</p>
-              <p class="text-gray-600 text-sm">Panama City → Emberá → Guna Yala (Senidub) → Colón / Portobelo → San Lorenzo → El Valle de Antón → Panama City</p>
+              <p class="tour-card__label">Trasa</p>
+              <p class="tour-card__text">Panama City → Emberá → Guna Yala (Senidub) → Colón / Portobelo → San Lorenzo → El Valle de Antón → Panama City</p>
             </div>
             <div class="mb-6">
-              <p class="text-gray-400 text-sm mb-1">Zahrnuto v ceně</p>
-              <p class="text-gray-600 text-sm">průvodce a auto po celou dobu, ubytování (La República, Colón, dům El Valle), 3 dny Emberá a 2 dny Guna Yala včetně stravy, Miraflores, Metropolitní park, San Francisco de Asís, Portobelo, San Lorenzo, Sleeping Indian, lodní doprava, benzín, hraniční poplatky, daň, pojištění</p>
+              <p class="tour-card__label">Zahrnuto v ceně</p>
+              <p class="tour-card__text">průvodce a auto po celou dobu, ubytování (La República, Colón, dům El Valle), 3 dny Emberá a 2 dny Guna Yala včetně stravy, Miraflores, Metropolitní park, San Francisco de Asís, Portobelo, San Lorenzo, Sleeping Indian, lodní doprava, benzín, hraniční poplatky, daň, pojištění</p>
             </div>
-            <a href="kontakt.html" class="inline-block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition-colors text-sm font-semibold">Mám zájem</a>
+            <a href="kontakt.html" class="tour-card__cta inline-block bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors font-semibold">Mám zájem</a>
           </div>
         </div>
 
         <!-- Nikaragua 16 dní -->
-        <div class="rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
-          <div class="relative h-64 overflow-hidden">
-            <img src="nikaragua-dsc-0135.jpg" alt="Nikaragua" class="w-full h-full object-cover" />
+        <div class="tour-card rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+          <div class="relative tour-card__media overflow-hidden">
+            <img src="nikaragua-dsc-0135.jpg" alt="Nikaragua" class="tour-card__img tour-card__img--nikaragua w-full h-full" />
             <div class="absolute top-4 left-4 bg-green-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Nikaragua</div>
           </div>
-          <div class="p-8">
+          <div class="tour-card__body">
             <h3 class="text-green-800 mb-1">Nikaragua 16 dní / 15 nocí</h3>
             <p class="text-gray-500 mb-4">Corn Islands, Somoto, Granada, León, Ometepe</p>
-            <div class="grid grid-cols-2 gap-4 mb-5 text-sm">
-              <div><span class="text-gray-400">Mimo hlavní sezónu</span><p class="font-semibold text-green-700">od 2 700 USD / osoba</p><p class="text-xs text-gray-400">květen–listopad</p></div>
-              <div><span class="text-gray-400">Hlavní sezóna</span><p class="font-semibold text-green-700">od 2 830 USD / osoba</p><p class="text-xs text-gray-400">prosinec–duben</p></div>
-              <div><span class="text-gray-400">Skupina</span><p class="font-semibold">6 osob</p></div>
-              <div><span class="text-gray-400">Platí od</span><p class="font-semibold">únor 2027</p></div>
+            <div class="tour-card__facts grid grid-cols-2 mb-5">
+              <div><span class="tour-fact__label">Mimo hlavní sezónu</span><p class="tour-fact__price text-green-700">od 2 700 USD / osoba</p><p class="tour-fact__season">květen–listopad</p></div>
+              <div><span class="tour-fact__label">Hlavní sezóna</span><p class="tour-fact__price text-green-700">od 2 830 USD / osoba</p><p class="tour-fact__season">prosinec–duben</p></div>
+              <div><span class="tour-fact__label">Skupina</span><p class="tour-fact__value">6 osob</p></div>
+              <div><span class="tour-fact__label">Platí od</span><p class="tour-fact__value">únor 2027</p></div>
             </div>
             <div class="mb-4">
-              <p class="text-gray-400 text-sm mb-1">Trasa</p>
-              <p class="text-gray-600 text-sm">San José → Managua → Bluefields → Corn Islands → Somoto → Granada → León → Ometepe → Rivas → San José</p>
+              <p class="tour-card__label">Trasa</p>
+              <p class="tour-card__text">San José → Managua → Bluefields → Corn Islands → Somoto → Granada → León → Ometepe → Rivas → San José</p>
             </div>
             <div class="mb-6">
-              <p class="text-gray-400 text-sm mb-1">Hlavní body programu</p>
-              <p class="text-gray-600 text-sm">Managua, Bluefields, Corn Islands (3 noci, 4× čtyřkolky), Cañón de Somoto, Granada, León, Ometepe (Concepción, Ojo de Agua), návrat do Kostariky</p>
+              <p class="tour-card__label">Hlavní body programu</p>
+              <p class="tour-card__text">Managua, Bluefields, Corn Islands (3 noci, 4× čtyřkolky), Cañón de Somoto, Granada, León, Ometepe (Concepción, Ojo de Agua), návrat do Kostariky</p>
             </div>
-            <a href="kontakt.html" class="inline-block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition-colors text-sm font-semibold">Mám zájem</a>
+            <a href="kontakt.html" class="tour-card__cta inline-block bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors font-semibold">Mám zájem</a>
           </div>
         </div>
 
       </div>
 
-      <div class="mt-12 max-w-3xl mx-auto text-center text-sm text-gray-500 leading-relaxed">
-        <p>Ceny platí od února 2027. Kalkulace pro skupinu 6 osob</p>
-        <p class="text-xs mt-1">V případě menší skupiny dojde k úpravě ceny.</p>
-      </div>
     </div>
   </section>
 
