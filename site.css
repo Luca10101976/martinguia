@@ -40,23 +40,30 @@ h4,
   font-weight: 600;
 }
 
-h1 {
+/* Tailwind z CDN vkládá preflight (h1–h6 { font-size: inherit })
+ * až za tento soubor, proto musí být velikosti nadpisů specifičtější
+ * než holý typový selektor. Tailwind utility text-* mají přednost dál. */
+body h1 {
   font-size: clamp(2rem, 2.5vw + 1.25rem, 2.5rem);
+  font-weight: 600;
   line-height: 1.18;
 }
 
-h2 {
-  font-size: clamp(1.85rem, 3.35vw, 2.5rem);
-  line-height: 1.18;
+body h2 {
+  font-size: clamp(1.75rem, 2vw + 1.1rem, 2.25rem);
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-h3 {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-  line-height: 1.28;
+body h3 {
+  font-size: clamp(1.1875rem, 0.4vw + 1.1rem, 1.375rem);
+  font-weight: 600;
+  line-height: 1.3;
 }
 
-h4 {
+body h4 {
   font-size: 1.125rem;
+  font-weight: 600;
   line-height: 1.35;
 }
 
