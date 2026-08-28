@@ -2,8 +2,8 @@ tailwind.config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Open Sans"', 'system-ui', 'sans-serif'],
-        serif: ['"Bree Serif"', 'Georgia', 'serif'],
+        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+        serif: ['"Bitter"', 'Georgia', 'serif'],
       },
     },
   },

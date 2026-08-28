@@ -1,10 +1,10 @@
 /* Martin Guía – typografie a sdílené styly */
 
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --font-sans: 'Open Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-serif: 'Bree Serif', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Bitter', Georgia, 'Times New Roman', serif;
   --color-text: #1f2937;
   --color-heading: #14532d;
 }
@@ -25,7 +25,7 @@ body {
 /* Nadpisy – cestovatelský serif */
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h4 {
   font-family: var(--font-serif);
   font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   line-height: 1.15;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .hero-lead {
