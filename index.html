@@ -33,6 +33,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind-config.js"></script>
   <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="home.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,7 +53,7 @@
   }
   </script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 home-page">
 
   <!-- NAVIGATION -->
   <nav class="bg-white shadow-sm sticky top-0 z-40">
@@ -114,13 +115,13 @@
 </script>
 
   <!-- HERO -->
-  <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-    <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000160-2b6492b64b/IMG_20250406_113340.jpeg" alt="Kostarika" class="absolute inset-0 w-full h-full object-cover object-center" style="filter: brightness(1.35) saturate(1.2);" />
+  <section class="home-hero">
+    <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000160-2b6492b64b/IMG_20250406_113340.jpeg" alt="Kostarika" class="home-hero__img absolute inset-0 w-full h-full" style="filter: brightness(1.35) saturate(1.2);" />
     <div class="hero-overlay absolute inset-0"></div>
-    <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-      <h1 class="hero-title mb-6 leading-tight drop-shadow">Cestování po Kostarice, Panamě a Nikaragui s českým průvodcem Martinem</h1>
-      <p class="hero-lead mb-10 text-green-100">S respektem a úctou k přírodě i lidem. Itinerář přesně na míru.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <div class="home-hero__content relative z-10 text-center text-white px-6 mx-auto">
+      <h1 class="home-hero__title leading-tight drop-shadow">Cestování po Kostarice, Panamě a Nikaragui s českým průvodcem Martinem</h1>
+      <p class="hero-lead text-green-100">S respektem a úctou k přírodě i lidem. Itinerář přesně na míru.</p>
+      <div class="home-hero__cta flex flex-col sm:flex-row justify-center">
         <a href="zajezdy.html" class="bg-green-700 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-full transition-colors text-lg shadow-lg">Prohlédnout zájezdy</a>
         <a href="kontakt.html" class="border-2 border-white text-white hover:bg-white hover:text-green-800 font-semibold px-8 py-3 rounded-full transition-colors text-lg">Napsat Martinovi</a>
       </div>
@@ -128,34 +129,34 @@
   </section>
 
   <!-- PROC S NAMI -->
-  <section class="py-20 bg-green-50">
+  <section class="home-section home-section--hero-adjacent bg-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
+      <div class="home-section__intro text-center">
         <h2 class="text-green-800 mb-3">Proč s námi?</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">Šest důvodů, proč si vybrat Martina jako vašeho průvodce Střední Amerikou</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl shadow-sm p-8 card-hover border-t-4 border-green-700">
+        <div class="bg-white rounded-2xl shadow-sm home-why-card card-hover border-t-4 border-green-700">
           <h3 class="text-green-800 mb-3">Průvodce v češtině</h3>
           <p class="text-gray-600">Martin mluví česky a španělsky – žádná jazyková bariéra. Vždy víte, co se kolem vás děje.</p>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm p-8 card-hover border-t-4 border-green-700">
+        <div class="bg-white rounded-2xl shadow-sm home-why-card card-hover border-t-4 border-green-700">
           <h3 class="text-green-800 mb-3">Program na míru</h3>
           <p class="text-gray-600">Tropické pralesy, sopky nebo karibské pláže – vše podle vašich přání. Žádné kompromisy.</p>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm p-8 card-hover border-t-4 border-green-700">
+        <div class="bg-white rounded-2xl shadow-sm home-why-card card-hover border-t-4 border-green-700">
           <h3 class="text-green-800 mb-3">Respekt k přírodě</h3>
           <p class="text-gray-600">Cestujeme zodpovědně – s respektem k lidem i přírodě. Udržitelný cestovní ruch je naší prioritou.</p>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm p-8 card-hover border-t-4 border-green-700">
+        <div class="bg-white rounded-2xl shadow-sm home-why-card card-hover border-t-4 border-green-700">
           <h3 class="text-green-800 mb-3">Jistota při cestování</h3>
           <p class="text-gray-600">Martin je vždy s vaší skupinou – od příletu až po odlet. Nemusíte se o nic starat.</p>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm p-8 card-hover border-t-4 border-green-700">
+        <div class="bg-white rounded-2xl shadow-sm home-why-card card-hover border-t-4 border-green-700">
           <h3 class="text-green-800 mb-3">Dlouholeté zkušenosti</h3>
           <p class="text-gray-600">Léta v terénu, stovky spokojených cestovatelů. Zkušenosti, které nelze získat z průvodce.</p>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm p-8 card-hover border-t-4 border-green-700">
+        <div class="bg-white rounded-2xl shadow-sm home-why-card card-hover border-t-4 border-green-700">
           <h3 class="text-green-800 mb-3">Stále objevujeme</h3>
           <p class="text-gray-600">Neustále hledáme nová místa a zážitky. Každý zájezd přináší něco, co jinde nenajdete.</p>
         </div>
@@ -164,68 +165,68 @@
   </section>
 
   <!-- ZAJEZDY -->
-  <section class="py-20 bg-white">
+  <section class="home-section bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
+      <div class="home-section__intro text-center">
         <h2 class="text-green-800 mb-3">Dobrodružné zájezdy 2027</h2>
         <p class="text-gray-600 text-lg">Ceny platí od února 2027 · skupina 6 osob</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover bg-white border border-gray-100">
-          <div class="relative h-44 overflow-hidden">
+          <div class="relative home-tour-card__media overflow-hidden">
             <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000351-2a24b2a24e/IMG_20241121_062559-8.jpeg" alt="Kostarika 16 dní" class="w-full h-full object-cover" />
             <div class="absolute top-3 left-3 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Kostarika Pacifik</div>
           </div>
-          <div class="p-5">
+          <div class="home-tour-card__body">
             <h3 class="text-lg text-green-800 mb-1">16 dní / 15 nocí</h3>
             <p class="text-green-700 font-bold mb-3">od 3 150 USD</p>
             <a href="zajezdy.html" class="text-green-700 text-sm font-semibold hover:underline">Detail zájezdu →</a>
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover bg-white border border-gray-100">
-          <div class="relative h-44 overflow-hidden">
+          <div class="relative home-tour-card__media overflow-hidden">
             <img src="https://f86b84a37b.clvaw-cdnwnd.com/ab1cc318ab55b9dc40de4e4ba1043ae4/200000508-c3589c358c/IMG_20230419_155318%2018.15.44.jpeg" alt="Kostarika Karibik" class="w-full h-full object-cover" />
             <div class="absolute top-3 left-3 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Kostarika Karibik</div>
           </div>
-          <div class="p-5">
+          <div class="home-tour-card__body">
             <h3 class="text-lg text-green-800 mb-1">14 dní / 13 nocí</h3>
             <p class="text-green-700 font-bold mb-3">od 2 550 USD</p>
             <a href="zajezdy.html" class="text-green-700 text-sm font-semibold hover:underline">Detail zájezdu →</a>
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover bg-white border-2 border-amber-200">
-          <div class="relative h-44 overflow-hidden">
+          <div class="relative home-tour-card__media overflow-hidden">
             <img src="panama-prakticke-hero.jpg" alt="Panama 14 dní" class="w-full h-full object-cover" />
             <div class="absolute top-3 left-3 bg-amber-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Panama · akce</div>
           </div>
-          <div class="p-5">
+          <div class="home-tour-card__body">
             <h3 class="text-lg text-green-800 mb-1">14 dní / 13 nocí</h3>
             <p class="text-green-700 font-bold mb-3">od 2 200 USD</p>
             <a href="zajezdy.html" class="text-green-700 text-sm font-semibold hover:underline">Detail zájezdu →</a>
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-sm card-hover bg-white border border-gray-100">
-          <div class="relative h-44 overflow-hidden">
+          <div class="relative home-tour-card__media overflow-hidden">
             <img src="nikaragua-dsc-0135.jpg" alt="Nikaragua 16 dní" class="w-full h-full object-cover" />
             <div class="absolute top-3 left-3 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Nikaragua</div>
           </div>
-          <div class="p-5">
+          <div class="home-tour-card__body">
             <h3 class="text-lg text-green-800 mb-1">16 dní / 15 nocí</h3>
             <p class="text-green-700 font-bold mb-3">od 2 700 USD</p>
             <a href="zajezdy.html" class="text-green-700 text-sm font-semibold hover:underline">Detail zájezdu →</a>
           </div>
         </div>
       </div>
-      <div class="text-center mt-10">
+      <div class="home-section__footer-link text-center">
         <a href="zajezdy.html" class="inline-block bg-green-700 text-white px-8 py-3 rounded-full hover:bg-green-800 transition-colors font-semibold">Všechny zájezdy a sezóny</a>
       </div>
     </div>
   </section>
 
   <!-- REFERENCE -->
-  <section class="py-20 bg-green-50">
+  <section class="home-section bg-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
+      <div class="home-section__intro text-center">
         <h2 class="text-green-800 mb-3">Co říkají cestovatelé</h2>
         <p class="text-gray-600 text-lg">Skutečné zkušenosti z cest s Martinem</p>
       </div>
@@ -252,16 +253,16 @@
           <p class="font-semibold text-green-800">Miroslav Liška</p>
         </div>
       </div>
-      <div class="text-center mt-10">
+      <div class="home-section__footer-link text-center">
         <a href="reference.html" class="inline-block border-2 border-green-700 text-green-700 px-8 py-3 rounded-full hover:bg-green-700 hover:text-white transition-colors font-semibold">Všechny reference</a>
       </div>
     </div>
   </section>
 
   <!-- BLOG -->
-  <section class="py-20 bg-white">
+  <section class="home-section bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
+      <div class="home-section__intro text-center">
         <h2 class="text-green-800 mb-3">Zprávy z Kostariky</h2>
         <p class="text-gray-600 text-lg">Tipy, informace a příběhy přímo z terénu</p>
       </div>
